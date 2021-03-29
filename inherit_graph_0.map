@@ -1,0 +1,27 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,592,116,619"/>
+<area shape="rect" id="node2" href="$class_game_scene1_1_1_game_screen_manager.html" title=" " alt="" coords="164,52,395,79"/>
+<area shape="rect" id="node5" href="$class_game_scene1_1_1_level_selection_screen.html" title=" " alt="" coords="185,103,373,145"/>
+<area shape="rect" id="node6" href="$class_game_scene1_1_1_tilemap_game_adapter.html" title=" " alt="" coords="164,169,395,196"/>
+<area shape="rect" id="node10" href="$class_game_scene2_1_1_leaderboard_manager.html" title=" " alt="" coords="166,220,393,247"/>
+<area shape="rect" id="node11" href="$class_game_scene2_1_1_level_selection_screen2.html" title=" " alt="" coords="185,271,373,313"/>
+<area shape="rect" id="node12" href="$class_game_scene2_1_1_profile_selection_screen.html" title=" " alt="" coords="182,337,377,378"/>
+<area shape="rect" id="node13" href="$class_game_scene3_1_1_level_editing_screen.html" title=" " alt="" coords="172,403,387,429"/>
+<area shape="rect" id="node14" href="$class_game_scene3_1_1_level_registry2_initializer.html" title=" " alt="" coords="185,454,374,495"/>
+<area shape="rect" id="node15" href="$class_game_scene3_1_1_level_selection_screen3.html" title=" " alt="" coords="185,519,373,561"/>
+<area shape="rect" id="node16" href="$class_game_scene3_1_1_save_data_selection_screen.html" title=" " alt="" coords="172,585,387,626"/>
+<area shape="rect" id="node17" href="$class_internationalization_1_1_game_scene1_translator.html" title=" " alt="" coords="195,650,364,691"/>
+<area shape="rect" id="node18" href="$class_internationalization_1_1_game_scene2_translator.html" title=" " alt="" coords="195,715,364,757"/>
+<area shape="rect" id="node19" href="$class_internationalization_1_1_game_scene3_translator.html" title=" " alt="" coords="195,781,364,822"/>
+<area shape="rect" id="node20" href="$class_internationalization_1_1_main_scene_translator.html" title=" " alt="" coords="198,846,361,887"/>
+<area shape="rect" id="node21" href="$class_main_scene_1_1_main_menu.html" title="Adds functionality to the play and quit buttons on the main menu." alt="" coords="204,912,355,939"/>
+<area shape="rect" id="node22" href="$class_main_scene_1_1_main_scene_setup.html" title="Takes care of setting up the MainScene, loading options and languages." alt="" coords="184,963,375,989"/>
+<area shape="rect" id="node23" href="$class_main_scene_1_1_options_menu.html" title="This class adds functionality to the options menu" alt="" coords="195,1013,363,1040"/>
+<area shape="rect" id="node24" href="$class_main_scene_1_1_stage_selection_screen.html" title=" " alt="" coords="190,1065,369,1106"/>
+<area shape="rect" id="node25" href="$class_program_setup_1_1_audio_manager.html" title=" " alt="" coords="183,1131,375,1157"/>
+<area shape="rect" id="node3" href="$class_game_scene2_1_1_game_screen_manager2.html" title=" " alt="" coords="443,5,681,32"/>
+<area shape="rect" id="node4" href="$class_game_scene3_1_1_game_screen_manager3.html" title=" " alt="" coords="443,56,681,83"/>
+<area shape="rect" id="node7" href="$class_game_scene2_1_1_tilemap_game_adapter2.html" title=" " alt="" coords="443,111,681,137"/>
+<area shape="rect" id="node8" href="$class_game_scene3_1_1_editor_tilemap_game_adapter.html" title=" " alt="" coords="470,162,654,203"/>
+<area shape="rect" id="node9" href="$class_game_scene3_1_1_tilemap_game_adapter3.html" title=" " alt="" coords="443,228,681,255"/>
+</map>

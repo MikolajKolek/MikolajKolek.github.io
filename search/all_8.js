@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['id_184',['id',['../struct_game_scene1_1_1_level.html#a1ec38dbb4a7edf23d4d74cd701faa026',1,'GameScene1.Level.id()'],['../struct_game_scene2_1_1_profile.html#a6ef0ef599b6cb6687534de7b17913f68',1,'GameScene2.Profile.id()']]],
+  ['image_185',['Image',['../_level_selection_screen_8cs.html#a608db096452b7c3af254e6770ebfdc88',1,'LevelSelectionScreen.cs']]],
+  ['increaselevelheight_186',['IncreaseLevelHeight',['../class_game_scene3_1_1_level_editing_screen.html#ac6c089528ba2311d10e4af412a2fe1dd',1,'GameScene3::LevelEditingScreen']]],
+  ['increaselevelwidth_187',['IncreaseLevelWidth',['../class_game_scene3_1_1_level_editing_screen.html#a9feee06feebbdcff3b4bbbcf8d10d517',1,'GameScene3::LevelEditingScreen']]],
+  ['individualscoresbackbuttontext_188',['individualScoresBackButtonText',['../class_internationalization_1_1_game_scene2_translator.html#a0c9f509cd17a422e17f5a87f10ed3100',1,'Internationalization::GameScene2Translator']]],
+  ['individualscoreslist_189',['individualScoresList',['../class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d',1,'GameScene2::LeaderboardManager']]],
+  ['individualscoresscreen_190',['individualScoresScreen',['../class_game_scene2_1_1_leaderboard_manager.html#a36f25068edd58bd65461e3e20eef0a45',1,'GameScene2::LeaderboardManager']]],
+  ['individualscoresscrollviewcontent_191',['individualScoresScrollViewContent',['../class_game_scene2_1_1_leaderboard_manager.html#aeb05eaa4bb268333026827ce062ab70f',1,'GameScene2::LeaderboardManager']]],
+  ['ineditmode_192',['inEditMode',['../class_game_scene3_1_1_game_screen_manager3.html#a7126914e2123f10a09109a0279b11360',1,'GameScene3::GameScreenManager3']]],
+  ['infobacktext_193',['infoBackText',['../class_internationalization_1_1_main_scene_translator.html#a7ec3f71704ee4efee1e706efee89f132',1,'Internationalization::MainSceneTranslator']]],
+  ['infobuttontext_194',['infoButtonText',['../class_internationalization_1_1_main_scene_translator.html#a087d142ed1eff0b44e7aca36df0f8650',1,'Internationalization::MainSceneTranslator']]],
+  ['infomenu_195',['infoMenu',['../class_main_scene_1_1_main_scene_setup.html#a19f93c684452f433df9d4e3c001c4167',1,'MainScene::MainSceneSetup']]],
+  ['infotext_196',['infoText',['../class_internationalization_1_1_main_scene_translator.html#a7016fedfe2cfa7e4abe49ece5a49ce6b',1,'Internationalization::MainSceneTranslator']]],
+  ['ingamemode_197',['inGameMode',['../class_game_scene3_1_1_tilemap_game_adapter3.html#a7bb9717012806e99c551ac63ede9bcb8',1,'GameScene3::TilemapGameAdapter3']]],
+  ['initialize_198',['Initialize',['../class_game_scene3_1_1_save_data_selection_screen.html#afa91614e230df8bbcf87f1510a67126d',1,'GameScene3::SaveDataSelectionScreen']]],
+  ['initialized_199',['initialized',['../class_game_scene3_1_1_save_data_selection_screen.html#a9e1696ed361a2d10e2ab07266a3cdfbb',1,'GameScene3::SaveDataSelectionScreen']]],
+  ['initializeleaderboard_200',['InitializeLeaderboard',['../class_game_scene2_1_1_leaderboard_manager.html#ace5e55ae201d18137945f56f11be6462',1,'GameScene2::LeaderboardManager']]],
+  ['initializelevellist_201',['InitializeLevelList',['../class_game_scene1_1_1_level_registry.html#af52c3de0c4a2af18eae279667b6e9c56',1,'GameScene1.LevelRegistry.InitializeLevelList()'],['../class_game_scene3_1_1_level_registry2.html#a05c3332ea959d82ffb1534dc87a003da',1,'GameScene3.LevelRegistry2.InitializeLevelList()']]],
+  ['initializeprofileregistry_202',['InitializeProfileRegistry',['../class_game_scene2_1_1_profile_manager.html#a315c2d68caf20bbb72eee1ee851d6068',1,'GameScene2::ProfileManager']]],
+  ['initializeregistry_203',['InitializeRegistry',['../class_game_scene3_1_1_save_data_registry.html#a24289500563c44ab550eeb0f8f0ae993',1,'GameScene3::SaveDataRegistry']]],
+  ['initializetilemapdeserialization_204',['InitializeTilemapDeserialization',['../class_game_scene2_1_1_tilemap_serializable.html#a32bbb02a15bc3bd3d9d3862a87e1c4d1',1,'GameScene2::TilemapSerializable']]],
+  ['instance_205',['Instance',['../class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93',1,'ProgramSetup::AudioManager']]],
+  ['internationalization_206',['Internationalization',['../namespace_internationalization.html',1,'']]],
+  ['isempty_207',['isEmpty',['../class_game_scene2_1_1_save_data.html#a9c0a3d72a852b70e519348f3dd685df0',1,'GameScene2.SaveData.isEmpty()'],['../class_game_scene3_1_1_save_data2.html#aeed68498b64eaa19d6514ec79964ed7c',1,'GameScene3.SaveData2.isEmpty()']]],
+  ['ishighscore_208',['isHighScore',['../class_game_scene2_1_1_tilemap_game_adapter2.html#a7514674b697215597ba26754ac873a40',1,'GameScene2::TilemapGameAdapter2']]]
+];
