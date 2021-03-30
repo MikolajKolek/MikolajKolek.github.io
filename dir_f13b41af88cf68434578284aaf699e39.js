@@ -6,6 +6,5 @@ var dir_f13b41af88cf68434578284aaf699e39 =
     [ "Internationalization", "dir_c48f225337d5509a3f628b5eecbff6a2.html", "dir_c48f225337d5509a3f628b5eecbff6a2" ],
     [ "MainScene", "dir_22405a10eef030883f7db7223a591cc3.html", "dir_22405a10eef030883f7db7223a591cc3" ],
     [ "ProgramSetup", "dir_f546ea046172164c360adbf78a244c7a.html", "dir_f546ea046172164c360adbf78a244c7a" ],
-    [ "UI", "dir_4ae35e2d0d203079e26c83ccaec95743.html", "dir_4ae35e2d0d203079e26c83ccaec95743" ],
-    [ "DoxygenSetup.cs", "_doxygen_setup_8cs.html", null ]
+    [ "UI", "dir_4ae35e2d0d203079e26c83ccaec95743.html", "dir_4ae35e2d0d203079e26c83ccaec95743" ]
 ];

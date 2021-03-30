@@ -25,11 +25,12 @@
 var NAVTREE =
 [
   [ "Sokoban", "index.html", [
-    [ "My Personal Index Page", "index.html", [
-      [ "Introduction", "index.html#intro_sec", null ],
-      [ "Installation", "index.html#install_sec", [
-        [ "Step 1: Opening the box", "index.html#step1", null ]
-      ] ]
+    [ "Table of contents", "index.html#autotoc_md5", null ],
+    [ "Building the project", "md__c___users_kolek__desktop__programowanie__programy__unity__sokoban__sokoban__assets__scripts_building.html", null ],
+    [ "Development Enviroment", "md__c___users_kolek__desktop__programowanie__programy__unity__sokoban__sokoban__assets__scripts_enviroment.html", null ],
+    [ "Creating the installer", "md__c___users_kolek__desktop__programowanie__programy__unity__sokoban__sokoban__assets__scripts_installer.html", null ],
+    [ "Internationalization", "md__c___users_kolek__desktop__programowanie__programy__unity__sokoban__sokoban__assets__scripts_internationalization.html", [
+      [ "Adding languages", "md__c___users_kolek__desktop__programowanie__programy__unity__sokoban__sokoban__assets__scripts_internationalization.html#autotoc_md4", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
@@ -58,9 +59,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_audio_manager_8cs.html",
-"class_game_scene2_1_1_profile_manager.html#a14861c1148b8a936f151a106fcb0f73c",
-"class_game_scene3_1_1_save_data2.html#ade7c6eb0b54d1d3413cd2fa3592a9e5c",
-"class_program_setup_1_1_audio_manager.html#ac140681b7fb72e87d2c23dcd696b391d"
+"class_game_scene2_1_1_profile_manager.html#a315c2d68caf20bbb72eee1ee851d6068",
+"class_game_scene3_1_1_save_data2.html#afbcc000b55a66264712ae6ac8bcc4dd4",
+"class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

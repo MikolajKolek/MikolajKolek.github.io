@@ -43,6 +43,7 @@ var class_internationalization_1_1_game_scene3_translator =
     [ "playerMovesText", "class_internationalization_1_1_game_scene3_translator.html#a1bb30100e8f7cb1736c76a78c8146de6", null ],
     [ "playtestLevelButtonText", "class_internationalization_1_1_game_scene3_translator.html#a0a3f7ec8ae5fd40a074dc7ec2fa3dc82", null ],
     [ "quitLevelEditor", "class_internationalization_1_1_game_scene3_translator.html#a0e31c0b37b752215180eaa86c0c0a8f7", null ],
+    [ "quitWhileEditingWarning", "class_internationalization_1_1_game_scene3_translator.html#a56b88672d8b4f572db5a17f23fb61821", null ],
     [ "renameLevelInputFieldPlaceholder", "class_internationalization_1_1_game_scene3_translator.html#aa653d20cdbe6d3c390ef35fd8f924d00", null ],
     [ "restartButtonText", "class_internationalization_1_1_game_scene3_translator.html#a08125d3d6c7cb2920b35fd9f80d5ee32", null ],
     [ "retryButtonText", "class_internationalization_1_1_game_scene3_translator.html#ad40f1f45742266c391bac57df1bcc560", null ],

@@ -14,5 +14,6 @@ var class_game_scene3_1_1_game_screen_manager3 =
     [ "noSaveNameWarningText", "class_game_scene3_1_1_game_screen_manager3.html#aeb9c90d8e8a2fd9cc3aea5c50553340c", null ],
     [ "saveCreationSubscreen", "class_game_scene3_1_1_game_screen_manager3.html#acaeb8ebe9c217358911cffa33e2d96e0", null ],
     [ "savedText", "class_game_scene3_1_1_game_screen_manager3.html#a839579919a25af4c5a6ac877aae40f81", null ],
+    [ "saveGameButton", "class_game_scene3_1_1_game_screen_manager3.html#a816158300f4d792bd1607bd67cc58927", null ],
     [ "saveNameField", "class_game_scene3_1_1_game_screen_manager3.html#ae1fc887ec6de6c95084f51aefb720385", null ]
 ];

@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['tilemapgameadapter_2ecs_618',['TilemapGameAdapter.cs',['../_tilemap_game_adapter_8cs.html',1,'']]],
-  ['tilemapgameadapter2_2ecs_619',['TilemapGameAdapter2.cs',['../_tilemap_game_adapter2_8cs.html',1,'']]],
-  ['tilemapgameadapter3_2ecs_620',['TilemapGameAdapter3.cs',['../_tilemap_game_adapter3_8cs.html',1,'']]],
-  ['tilemapserializable_2ecs_621',['TilemapSerializable.cs',['../_tilemap_serializable_8cs.html',1,'']]],
-  ['toggleselectable_2ecs_622',['ToggleSelectable.cs',['../_toggle_selectable_8cs.html',1,'']]],
-  ['toggleselectableeditor_2ecs_623',['ToggleSelectableEditor.cs',['../_toggle_selectable_editor_8cs.html',1,'']]],
-  ['translator_2ecs_624',['Translator.cs',['../_translator_8cs.html',1,'']]]
+  ['savedata_2ecs_626',['SaveData.cs',['../_save_data_8cs.html',1,'']]],
+  ['savedata2_2ecs_627',['SaveData2.cs',['../_save_data2_8cs.html',1,'']]],
+  ['savedataregistry_2ecs_628',['SaveDataRegistry.cs',['../_save_data_registry_8cs.html',1,'']]],
+  ['savedataselectionscreen_2ecs_629',['SaveDataSelectionScreen.cs',['../_save_data_selection_screen_8cs.html',1,'']]],
+  ['stageselectionscreen_2ecs_630',['StageSelectionScreen.cs',['../_stage_selection_screen_8cs.html',1,'']]],
+  ['startingsetup_2ecs_631',['StartingSetup.cs',['../_starting_setup_8cs.html',1,'']]]
 ];
