@@ -29,7 +29,7 @@
    <div id="projectname">Sokoban
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Made by Mikołaj Kołek and Łukasz Prokop</div>
+   <div id="projectbrief">Made by Mikołaj Kołek, Łukasz Prokop and Witold Kędra</div>
   </td>
  </tr>
  </tbody>
@@ -96,86 +96,107 @@ $(document).ready(function(){initNavTree('class_program_setup_1_1_audio_manager.
 <div class="title">ProgramSetup.AudioManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_program_setup_1_1_audio_manager.html" title="The AudioManager is a singleton that is responsible for playing audio effects and music in the game.">AudioManager</a> is a singleton that is responsible for playing audio effects and music in the game.  
+ <a href="class_program_setup_1_1_audio_manager.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ac62dd355aab2a529d7ebfbc74255493e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a> { <br />
-&#160;&#160;<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea113168106fdb3cb0f4f6042e8e8c1fed">MusicClip.EasyLevelMusic</a>, 
-<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea7a97c8ca34c33826fc91c80206102d5f">MusicClip.MediumLevelMusic</a>, 
-<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea3098c6905d1c0a0f8fe6ed833d867ef7">MusicClip.HardLevelMusic</a>, 
-<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea98516712a52ebc722816bb9e5fde5d4b">MusicClip.LastLevelMusic</a>, 
+&#160;&#160;<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea6adf97f83acf6453d4a6a4b1070f3754">MusicClip.None</a> = 0, 
+<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea113168106fdb3cb0f4f6042e8e8c1fed">MusicClip.EasyLevelMusic</a> = 1, 
+<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea7a97c8ca34c33826fc91c80206102d5f">MusicClip.MediumLevelMusic</a> = 2, 
+<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea3098c6905d1c0a0f8fe6ed833d867ef7">MusicClip.HardLevelMusic</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea6a7b4ef139afe7e716804fa2f2a69e2f">MusicClip.PlayerLevelMusic</a>, 
-<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493eaed2f9cdb3474ddf134044b6dbef9dc2e">MusicClip.MenuMusic</a>
+&#160;&#160;<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea98516712a52ebc722816bb9e5fde5d4b">MusicClip.LastLevelMusic</a> = 4, 
+<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea6a7b4ef139afe7e716804fa2f2a69e2f">MusicClip.PlayerLevelMusic</a> = 5, 
+<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493eaed2f9cdb3474ddf134044b6dbef9dc2e">MusicClip.MenuMusic</a> = 6
 <br />
  }</td></tr>
+<tr class="memdesc:ac62dd355aab2a529d7ebfbc74255493e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum that stores all music clips in the game.  <a href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">More...</a><br /></td></tr>
 <tr class="separator:ac62dd355aab2a529d7ebfbc74255493e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a9dd2aa44274b90725f64ef08c67ac8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a> { <br />
-&#160;&#160;<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8a6adf97f83acf6453d4a6a4b1070f3754">AudioEffectClip.None</a>, 
-<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8a1408774a3df726c51dc98b61f113100a">AudioEffectClip.BoxMoved</a>, 
-<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8acf04142e3af61936cd995aa092a834d1">AudioEffectClip.BoxMovedInPlace</a>, 
-<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8a9c130e95620950534eee656031fc6a12">AudioEffectClip.ButtonClicked</a>, 
+&#160;&#160;<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8a6adf97f83acf6453d4a6a4b1070f3754">AudioEffectClip.None</a> = 0, 
+<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8a1408774a3df726c51dc98b61f113100a">AudioEffectClip.BoxMoved</a> = 1, 
+<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8acf04142e3af61936cd995aa092a834d1">AudioEffectClip.BoxMovedInPlace</a> = 2, 
+<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8a9c130e95620950534eee656031fc6a12">AudioEffectClip.ButtonClicked</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8af2151aa36b802f0013734bdab9398529">AudioEffectClip.LevelFinished</a>
+&#160;&#160;<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8af2151aa36b802f0013734bdab9398529">AudioEffectClip.LevelFinished</a> = 4
 <br />
  }</td></tr>
+<tr class="memdesc:a9a9dd2aa44274b90725f64ef08c67ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum that stores all audio effect clips in the game.  <a href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">More...</a><br /></td></tr>
 <tr class="separator:a9a9dd2aa44274b90725f64ef08c67ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a018223ba5dabdc97826fa124e8e225"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a3a018223ba5dabdc97826fa124e8e225">StopAudioEffects</a> ()</td></tr>
+<tr class="memdesc:a3a018223ba5dabdc97826fa124e8e225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops any currently playing audio effects.  <a href="class_program_setup_1_1_audio_manager.html#a3a018223ba5dabdc97826fa124e8e225">More...</a><br /></td></tr>
 <tr class="separator:a3a018223ba5dabdc97826fa124e8e225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7adf7ca6d06efba53730ecaf2f33d15d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a7adf7ca6d06efba53730ecaf2f33d15d">StopMusic</a> ()</td></tr>
+<tr class="memdesc:a7adf7ca6d06efba53730ecaf2f33d15d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops any currently playing music.  <a href="class_program_setup_1_1_audio_manager.html#a7adf7ca6d06efba53730ecaf2f33d15d">More...</a><br /></td></tr>
 <tr class="separator:a7adf7ca6d06efba53730ecaf2f33d15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c24f32d6ae7bc07f23fe4cfbde0f431"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a3c24f32d6ae7bc07f23fe4cfbde0f431">PlayMusic</a> (<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a> clip)</td></tr>
+<tr class="memdesc:a3c24f32d6ae7bc07f23fe4cfbde0f431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the given <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e" title="An enum that stores all music clips in the game.">MusicClip</a> while smoothly transitioning away from the previous clip if one was already playing.  <a href="class_program_setup_1_1_audio_manager.html#a3c24f32d6ae7bc07f23fe4cfbde0f431">More...</a><br /></td></tr>
 <tr class="separator:a3c24f32d6ae7bc07f23fe4cfbde0f431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c6651ab028152431142ddc71900f3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">PlayAudioEffect</a> (<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a> clip)</td></tr>
+<tr class="memdesc:aa7c6651ab028152431142ddc71900f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the given <a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8" title="An enum that stores all audio effect clips in the game.">AudioEffectClip</a> while smoothly transitioning away from the previous clip if one was already playing and it was over a second long.  <a href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">More...</a><br /></td></tr>
 <tr class="separator:aa7c6651ab028152431142ddc71900f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cf465022b8e9637d80a780c310d4c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a4cf465022b8e9637d80a780c310d4c12">SetAudioEffectsVolume</a> (float value)</td></tr>
+<tr class="memdesc:a4cf465022b8e9637d80a780c310d4c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the audio effects volume on the <a class="el" href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd" title="The AudioMixer that is used for playing audio effects.">audioEffectsMixer</a>.  <a href="class_program_setup_1_1_audio_manager.html#a4cf465022b8e9637d80a780c310d4c12">More...</a><br /></td></tr>
 <tr class="separator:a4cf465022b8e9637d80a780c310d4c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace48e7479137fb817829a592bffa4d7a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ace48e7479137fb817829a592bffa4d7a">GetAudioEffectsVolume</a> ()</td></tr>
+<tr class="memdesc:ace48e7479137fb817829a592bffa4d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the audio effects volume from the <a class="el" href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd" title="The AudioMixer that is used for playing audio effects.">audioEffectsMixer</a>.  <a href="class_program_setup_1_1_audio_manager.html#ace48e7479137fb817829a592bffa4d7a">More...</a><br /></td></tr>
 <tr class="separator:ace48e7479137fb817829a592bffa4d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad63e2037aaa2a06da584d9c3263182e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ad63e2037aaa2a06da584d9c3263182e9">SetMusicVolume</a> (float value)</td></tr>
+<tr class="memdesc:ad63e2037aaa2a06da584d9c3263182e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the music volume on the <a class="el" href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84" title="The AudioMixer that is used for playing music.">musicMixer</a>.  <a href="class_program_setup_1_1_audio_manager.html#ad63e2037aaa2a06da584d9c3263182e9">More...</a><br /></td></tr>
 <tr class="separator:ad63e2037aaa2a06da584d9c3263182e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46e8891eec33189414bd02fc5fd0336e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a46e8891eec33189414bd02fc5fd0336e">GetMusicVolume</a> ()</td></tr>
+<tr class="memdesc:a46e8891eec33189414bd02fc5fd0336e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the music volume from the <a class="el" href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84" title="The AudioMixer that is used for playing music.">musicMixer</a>.  <a href="class_program_setup_1_1_audio_manager.html#a46e8891eec33189414bd02fc5fd0336e">More...</a><br /></td></tr>
 <tr class="separator:a46e8891eec33189414bd02fc5fd0336e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aca2f0503bb079e0a289d0c6e698c6c93"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a></td></tr>
+<tr class="memdesc:aca2f0503bb079e0a289d0c6e698c6c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to store the single instance of the <a class="el" href="class_program_setup_1_1_audio_manager.html" title="The AudioManager is a singleton that is responsible for playing audio effects and music in the game.">AudioManager</a> singleton.  <a href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">More...</a><br /></td></tr>
 <tr class="separator:aca2f0503bb079e0a289d0c6e698c6c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ab487074ef55d678c6a03201f0851cdb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ab487074ef55d678c6a03201f0851cdb8">Awake</a> ()</td></tr>
+<tr class="memdesc:ab487074ef55d678c6a03201f0851cdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the <a class="el" href="class_program_setup_1_1_audio_manager.html" title="The AudioManager is a singleton that is responsible for playing audio effects and music in the game.">AudioManager</a> is created, it makes sure that only one instance can exist at one time. Also sets up the dictionaries, <a class="el" href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a" title="Stores the time at which a MusicClip was last stopped so it can be resumed at that same time.">musicTime</a> and the AudioSources.  <a href="class_program_setup_1_1_audio_manager.html#ab487074ef55d678c6a03201f0851cdb8">More...</a><br /></td></tr>
 <tr class="separator:ab487074ef55d678c6a03201f0851cdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e5e4911881e826e7829e90479cec8bd"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a3e5e4911881e826e7829e90479cec8bd">FadeAudioClip</a> (AudioClip clip)</td></tr>
-<tr class="separator:a3e5e4911881e826e7829e90479cec8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac21fca0201b7b3c0a062ab125863c168"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ac21fca0201b7b3c0a062ab125863c168">TransitionMusicClips</a> (AudioClip clip1, AudioClip clip2)</td></tr>
-<tr class="separator:ac21fca0201b7b3c0a062ab125863c168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98e12be40de779adc25644a7c8b69dd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a98e12be40de779adc25644a7c8b69dd2">PlayRandomClip</a> (IReadOnlyList&lt; AudioClip &gt; clipList, AudioSource source)</td></tr>
-<tr class="separator:a98e12be40de779adc25644a7c8b69dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af18f348c42d072a001ff6d6d0a8ee61b"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#af18f348c42d072a001ff6d6d0a8ee61b">TransitionAudioClips</a> (AudioSource mainSource, AudioSource transitionSource, AudioClip clip1, AudioClip clip2, float transitionTime)</td></tr>
+<tr class="memdesc:af18f348c42d072a001ff6d6d0a8ee61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A coroutine that smoothly transitions between two AudioClips.  <a href="class_program_setup_1_1_audio_manager.html#af18f348c42d072a001ff6d6d0a8ee61b">More...</a><br /></td></tr>
+<tr class="separator:af18f348c42d072a001ff6d6d0a8ee61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a13b62b1ddec3f65607546956af58c5e2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a13b62b1ddec3f65607546956af58c5e2">SetAudioMixerVolume</a> (float value, AudioMixer mixer)</td></tr>
+<tr class="memdesc:a13b62b1ddec3f65607546956af58c5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the volume of the passed AudioMixer  <a href="class_program_setup_1_1_audio_manager.html#a13b62b1ddec3f65607546956af58c5e2">More...</a><br /></td></tr>
 <tr class="separator:a13b62b1ddec3f65607546956af58c5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94138051d742e8914e42a682d334946e"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a94138051d742e8914e42a682d334946e">GetAudioMixerVolume</a> (AudioMixer mixer)</td></tr>
+<tr class="memdesc:a94138051d742e8914e42a682d334946e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the volume of the passed AudioMixer  <a href="class_program_setup_1_1_audio_manager.html#a94138051d742e8914e42a682d334946e">More...</a><br /></td></tr>
 <tr class="separator:a94138051d742e8914e42a682d334946e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae70ed714ac2545d04b954b3f06483467"><td class="memItemLeft" align="right" valign="top">AudioSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a></td></tr>
+<tr class="memdesc:ae70ed714ac2545d04b954b3f06483467"><td class="mdescLeft">&#160;</td><td class="mdescRight">The AudioSource that plays audio effects.  <a href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">More...</a><br /></td></tr>
 <tr class="separator:ae70ed714ac2545d04b954b3f06483467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadcb94f8cf95d44cde03bd2795b692ca"><td class="memItemLeft" align="right" valign="top">AudioSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a></td></tr>
+<tr class="memdesc:aadcb94f8cf95d44cde03bd2795b692ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The AudioSource that plays music.  <a href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">More...</a><br /></td></tr>
 <tr class="separator:aadcb94f8cf95d44cde03bd2795b692ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47a54c0d899c2bf83da7ea5d8685b0ff"><td class="memItemLeft" align="right" valign="top">AudioSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a></td></tr>
+<tr class="memdesc:a47a54c0d899c2bf83da7ea5d8685b0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The AudioSource that is used when transitioning between two music clips.  <a href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">More...</a><br /></td></tr>
 <tr class="separator:a47a54c0d899c2bf83da7ea5d8685b0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69d64398c5d0bb3edad956b2e9d4adbb"><td class="memItemLeft" align="right" valign="top">AudioSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a69d64398c5d0bb3edad956b2e9d4adbb">fadingAudioEffectSource</a></td></tr>
-<tr class="separator:a69d64398c5d0bb3edad956b2e9d4adbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f391158cb4ebdc81cbf580df05c96f"><td class="memItemLeft" align="right" valign="top">AudioSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ae9f391158cb4ebdc81cbf580df05c96f">transitionAudioEffectSource</a></td></tr>
+<tr class="memdesc:ae9f391158cb4ebdc81cbf580df05c96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The AudioSource that is used when transitioning between audio effects clips.  <a href="class_program_setup_1_1_audio_manager.html#ae9f391158cb4ebdc81cbf580df05c96f">More...</a><br /></td></tr>
+<tr class="separator:ae9f391158cb4ebdc81cbf580df05c96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a332c4360d5db5f4725f28b8516d5ab84"><td class="memItemLeft" align="right" valign="top">AudioMixer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84">musicMixer</a></td></tr>
+<tr class="memdesc:a332c4360d5db5f4725f28b8516d5ab84"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="">AudioMixer</a> that is used for playing music.  <a href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84">More...</a><br /></td></tr>
 <tr class="separator:a332c4360d5db5f4725f28b8516d5ab84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada100b6a5e27d177cdab73ce0a487dd"><td class="memItemLeft" align="right" valign="top">AudioMixer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd">audioEffectsMixer</a></td></tr>
+<tr class="memdesc:aada100b6a5e27d177cdab73ce0a487dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="">AudioMixer</a> that is used for playing audio effects.  <a href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd">More...</a><br /></td></tr>
 <tr class="separator:aada100b6a5e27d177cdab73ce0a487dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ffbdedd73a4e96110b8276a73445cd3"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3">easyLevelMusic</a></td></tr>
 <tr class="separator:a0ffbdedd73a4e96110b8276a73445cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,23 +231,25 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a8d9e16e409922cf80365df22313f10b2"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a8d9e16e409922cf80365df22313f10b2">buttonClickedEffect3</a></td></tr>
 <tr class="separator:a8d9e16e409922cf80365df22313f10b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add095346a5e4a855122c3ecba7502d18"><td class="memItemLeft" align="right" valign="top">readonly System.Random&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#add095346a5e4a855122c3ecba7502d18">random</a> = new System.Random()</td></tr>
+<tr class="memdesc:add095346a5e4a855122c3ecba7502d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to generate random values for playing random audio effects.  <a href="class_program_setup_1_1_audio_manager.html#add095346a5e4a855122c3ecba7502d18">More...</a><br /></td></tr>
 <tr class="separator:add095346a5e4a855122c3ecba7502d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff64ecc7d34e21826a0722846ff6289c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#aff64ecc7d34e21826a0722846ff6289c">easyLevelMusicTime</a></td></tr>
-<tr class="separator:aff64ecc7d34e21826a0722846ff6289c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c461f1f818986f5bb23fe67a5ff6642"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a5c461f1f818986f5bb23fe67a5ff6642">mediumLevelMusicTime</a></td></tr>
-<tr class="separator:a5c461f1f818986f5bb23fe67a5ff6642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b8b3b8060ee3ccf113c2e91838ede60"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a8b8b3b8060ee3ccf113c2e91838ede60">hardLevelMusicTime</a></td></tr>
-<tr class="separator:a8b8b3b8060ee3ccf113c2e91838ede60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abebb4ad41eadce1556e2f3c2e4619441"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#abebb4ad41eadce1556e2f3c2e4619441">lastLevelMusicTime</a></td></tr>
-<tr class="separator:abebb4ad41eadce1556e2f3c2e4619441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeb375aff3516f05530c5a8fc7aecdea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#abeb375aff3516f05530c5a8fc7aecdea">playerLevelMusicTime</a></td></tr>
-<tr class="separator:abeb375aff3516f05530c5a8fc7aecdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae53f60a3222265b4116754f218bd85bf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ae53f60a3222265b4116754f218bd85bf">menuMusicTime</a></td></tr>
-<tr class="separator:ae53f60a3222265b4116754f218bd85bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3d79bf7023df0cd27f341b7b989f95"><td class="memItemLeft" align="right" valign="top">readonly Dictionary&lt; <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>, AudioClip &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">musicClipDictionary</a> = new Dictionary&lt;<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>, AudioClip&gt;()</td></tr>
+<tr class="memdesc:a5e3d79bf7023df0cd27f341b7b989f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e" title="An enum that stores all music clips in the game.">MusicClip</a>s with their respective AudioClips  <a href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">More...</a><br /></td></tr>
+<tr class="separator:a5e3d79bf7023df0cd27f341b7b989f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f27fc95cb2fa57afa136fd96d1ee46"><td class="memItemLeft" align="right" valign="top">readonly Dictionary&lt; AudioClip, <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a> = new Dictionary&lt;AudioClip, <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>&gt;()</td></tr>
+<tr class="memdesc:ad7f27fc95cb2fa57afa136fd96d1ee46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates AudioClips with their respective <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e" title="An enum that stores all music clips in the game.">MusicClip</a>s  <a href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">More...</a><br /></td></tr>
+<tr class="separator:ad7f27fc95cb2fa57afa136fd96d1ee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83895ef0c414522dc312c7eb7b0232f"><td class="memItemLeft" align="right" valign="top">readonly Dictionary&lt; <a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>, List&lt; AudioClip &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#ac83895ef0c414522dc312c7eb7b0232f">audioEffectClipDictionary</a> = new Dictionary&lt;<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>, List&lt;AudioClip&gt;&gt;()</td></tr>
+<tr class="memdesc:ac83895ef0c414522dc312c7eb7b0232f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates <a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8" title="An enum that stores all audio effect clips in the game.">AudioEffectClip</a>s with the List&lt;T&gt; of their respective AudioClips  <a href="class_program_setup_1_1_audio_manager.html#ac83895ef0c414522dc312c7eb7b0232f">More...</a><br /></td></tr>
+<tr class="separator:ac83895ef0c414522dc312c7eb7b0232f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4321770979dc7fb70f363a8b31f8767a"><td class="memItemLeft" align="right" valign="top">readonly List&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a">musicTime</a> = new List&lt;float&gt;()</td></tr>
+<tr class="memdesc:a4321770979dc7fb70f363a8b31f8767a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the time at which a <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e" title="An enum that stores all music clips in the game.">MusicClip</a> was last stopped so it can be resumed at that same time.  <a href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a">More...</a><br /></td></tr>
+<tr class="separator:a4321770979dc7fb70f363a8b31f8767a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00009">9</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="textblock"><p>The <a class="el" href="class_program_setup_1_1_audio_manager.html" title="The AudioManager is a singleton that is responsible for playing audio effects and music in the game.">AudioManager</a> is a singleton that is responsible for playing audio effects and music in the game. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00011">11</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a9a9dd2aa44274b90725f64ef08c67ac8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a9dd2aa44274b90725f64ef08c67ac8">&#9670;&nbsp;</a></span>AudioEffectClip</h2>
@@ -247,6 +270,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>An enum that stores all audio effect clips in the game. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9a9dd2aa44274b90725f64ef08c67ac8a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9a9dd2aa44274b90725f64ef08c67ac8a1408774a3df726c51dc98b61f113100a"></a>BoxMoved&#160;</td><td class="fielddoc"></td></tr>
@@ -255,14 +280,14 @@ Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a9a9dd2aa44274b90725f64ef08c67ac8af2151aa36b802f0013734bdab9398529"></a>LevelFinished&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00058">58</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            None,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            BoxMoved,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            BoxMovedInPlace,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            ButtonClicked,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            LevelFinished</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00074">74</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            None = 0,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            BoxMoved = 1,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            BoxMovedInPlace = 2,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            ButtonClicked = 3,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            LevelFinished = 4</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -285,8 +310,11 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>An enum that stores all music clips in the game. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac62dd355aab2a529d7ebfbc74255493ea113168106fdb3cb0f4f6042e8e8c1fed"></a>EasyLevelMusic&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac62dd355aab2a529d7ebfbc74255493ea6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac62dd355aab2a529d7ebfbc74255493ea113168106fdb3cb0f4f6042e8e8c1fed"></a>EasyLevelMusic&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac62dd355aab2a529d7ebfbc74255493ea7a97c8ca34c33826fc91c80206102d5f"></a>MediumLevelMusic&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac62dd355aab2a529d7ebfbc74255493ea3098c6905d1c0a0f8fe6ed833d867ef7"></a>HardLevelMusic&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac62dd355aab2a529d7ebfbc74255493ea98516712a52ebc722816bb9e5fde5d4b"></a>LastLevelMusic&#160;</td><td class="fielddoc"></td></tr>
@@ -294,15 +322,16 @@ Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="ac62dd355aab2a529d7ebfbc74255493eaed2f9cdb3474ddf134044b6dbef9dc2e"></a>MenuMusic&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00050">50</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                              {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            EasyLevelMusic,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            MediumLevelMusic,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            HardLevelMusic,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            LastLevelMusic,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            PlayerLevelMusic,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            MenuMusic</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00061">61</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                              {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            None = 0,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            EasyLevelMusic = 1,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            MediumLevelMusic = 2,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            HardLevelMusic = 3,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            LastLevelMusic = 4,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            PlayerLevelMusic = 5,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            MenuMusic = 6</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,78 +354,48 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00068">68</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                             {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#aff64ecc7d34e21826a0722846ff6289c">easyLevelMusicTime</a> = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a5c461f1f818986f5bb23fe67a5ff6642">mediumLevelMusicTime</a> = 0;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a8b8b3b8060ee3ccf113c2e91838ede60">hardLevelMusicTime</a> = 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#abebb4ad41eadce1556e2f3c2e4619441">lastLevelMusicTime</a> = 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#abeb375aff3516f05530c5a8fc7aecdea">playerLevelMusicTime</a> = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ae53f60a3222265b4116754f218bd85bf">menuMusicTime</a> = 0;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.volume = 0.75f;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.volume = 1f;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>.volume = 0.75f;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a> == <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a> = <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a> != <span class="keyword">this</span>)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                Destroy(gameObject);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            DontDestroyOnLoad(gameObject);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a3e5e4911881e826e7829e90479cec8bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e5e4911881e826e7829e90479cec8bd">&#9670;&nbsp;</a></span>FadeAudioClip()</h2>
+<p>Called when the <a class="el" href="class_program_setup_1_1_audio_manager.html" title="The AudioManager is a singleton that is responsible for playing audio effects and music in the game.">AudioManager</a> is created, it makes sure that only one instance can exist at one time. Also sets up the dictionaries, <a class="el" href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a" title="Stores the time at which a MusicClip was last stopped so it can be resumed at that same time.">musicTime</a> and the AudioSources. </p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">IEnumerator ProgramSetup.AudioManager.FadeAudioClip </td>
-          <td>(</td>
-          <td class="paramtype">AudioClip&#160;</td>
-          <td class="paramname"><em>clip</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00110">110</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                          {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.isPlaying == <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                yield <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a69d64398c5d0bb3edad956b2e9d4adbb">fadingAudioEffectSource</a>.clip = clip;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a69d64398c5d0bb3edad956b2e9d4adbb">fadingAudioEffectSource</a>.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.time;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a69d64398c5d0bb3edad956b2e9d4adbb">fadingAudioEffectSource</a>.volume = 0.75f;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a69d64398c5d0bb3edad956b2e9d4adbb">fadingAudioEffectSource</a>.Play();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            var timer = 0.75f;</div>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00114">114</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                             {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a> == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a> = <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a> != <span class="keyword">this</span>)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                Destroy(gameObject);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">while</span> (timer &gt; 0) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                timer -= Time.deltaTime;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a69d64398c5d0bb3edad956b2e9d4adbb">fadingAudioEffectSource</a>.volume = timer;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a69d64398c5d0bb3edad956b2e9d4adbb">fadingAudioEffectSource</a>.volume = 0f;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a69d64398c5d0bb3edad956b2e9d4adbb">fadingAudioEffectSource</a>.Stop();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            DontDestroyOnLoad(gameObject);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">for</span> (var i = 0; i &lt; 7; i++)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a">musicTime</a>.Add(0);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">musicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.EasyLevelMusic, <a class="code" href="class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3">easyLevelMusic</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">musicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.MediumLevelMusic, <a class="code" href="class_program_setup_1_1_audio_manager.html#a4dd73d3b93f8ccac15a4dc1f5165abed">mediumLevelMusic</a>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">musicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.HardLevelMusic, <a class="code" href="class_program_setup_1_1_audio_manager.html#a974f2f9ed2dc8cf8e3eebe34f2a89281">hardLevelMusic</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">musicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.LastLevelMusic, <a class="code" href="class_program_setup_1_1_audio_manager.html#a78aaecd5686b44fb1b2f9a1f9f62823e">lastLevelMusic</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">musicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.PlayerLevelMusic, <a class="code" href="class_program_setup_1_1_audio_manager.html#ab814a60e302535aeeb42dbff23070340">playerLevelMusic</a>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">musicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.MenuMusic, <a class="code" href="class_program_setup_1_1_audio_manager.html#a336ab5ad7c11a50c45bcb0da3be6a1f7">menuMusic</a>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3">easyLevelMusic</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.EasyLevelMusic);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#a4dd73d3b93f8ccac15a4dc1f5165abed">mediumLevelMusic</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.MediumLevelMusic);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#a974f2f9ed2dc8cf8e3eebe34f2a89281">hardLevelMusic</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.HardLevelMusic);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#a78aaecd5686b44fb1b2f9a1f9f62823e">lastLevelMusic</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.LastLevelMusic);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#ab814a60e302535aeeb42dbff23070340">playerLevelMusic</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.PlayerLevelMusic);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#a336ab5ad7c11a50c45bcb0da3be6a1f7">menuMusic</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.MenuMusic);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ac83895ef0c414522dc312c7eb7b0232f">audioEffectClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.BoxMoved, <span class="keyword">new</span> List&lt;AudioClip&gt;(){boxMovedEffect1, boxMovedEffect2, boxMovedEffect3});</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ac83895ef0c414522dc312c7eb7b0232f">audioEffectClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.BoxMovedInPlace, <span class="keyword">new</span> List&lt;AudioClip&gt;() { boxMovedInPlaceEffect1, boxMovedInPlaceEffect2, boxMovedInPlaceEffect3 });</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ac83895ef0c414522dc312c7eb7b0232f">audioEffectClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.ButtonClicked, <span class="keyword">new</span> List&lt;AudioClip&gt;() { buttonClickedEffect1, buttonClickedEffect2, buttonClickedEffect3 });</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ac83895ef0c414522dc312c7eb7b0232f">audioEffectClipDictionary</a>.Add(<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.LevelFinished, <span class="keyword">new</span> List&lt;AudioClip&gt;() { levelFinishedEffect });</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.volume = 0.75f;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>.volume = 0.75f;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.volume = 1f;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -405,9 +404,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float ProgramSetup.AudioManager.GetAudioEffectsVolume </td>
@@ -416,17 +412,15 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00251">251</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                             {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#a94138051d742e8914e42a682d334946e">GetAudioMixerVolume</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd">audioEffectsMixer</a>);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
+<p>Gets the audio effects volume from the <a class="el" href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd" title="The AudioMixer that is used for playing audio effects.">audioEffectsMixer</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>The audio effects volume.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00264">264</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                             {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#a94138051d742e8914e42a682d334946e">GetAudioMixerVolume</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd">audioEffectsMixer</a>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -449,20 +443,29 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00267">267</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            var ok = mixer.GetFloat(<span class="stringliteral">&quot;GameVolume&quot;</span>, out var volume);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            volume = Mathf.Pow(10, volume / 20);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordflow">if</span> (!ok)</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                volume = 1f;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordflow">return</span> volume;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        }</div>
+<p>Gets the volume of the passed AudioMixer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mixer</td><td>The AudioMixer you want to get the volume of.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The volume of the AudioMixer</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00298">298</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                                                   {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            var ok = mixer.GetFloat(<span class="stringliteral">&quot;GameVolume&quot;</span>, out var volume);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            volume = Mathf.Pow(10, volume / 20);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            <span class="keywordflow">if</span> (!ok)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                volume = 1f;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="keywordflow">return</span> volume;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -471,9 +474,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float ProgramSetup.AudioManager.GetMusicVolume </td>
@@ -482,17 +482,15 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00259">259</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                      {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#a94138051d742e8914e42a682d334946e">GetAudioMixerVolume</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84">musicMixer</a>);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
+<p>Gets the music volume from the <a class="el" href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84" title="The AudioMixer that is used for playing music.">musicMixer</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>The music volume.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00280">280</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                      {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#a94138051d742e8914e42a682d334946e">GetAudioMixerVolume</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84">musicMixer</a>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -501,9 +499,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ProgramSetup.AudioManager.PlayAudioEffect </td>
@@ -513,38 +508,30 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00222">222</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                                          {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a500ea18e8f2001b6ec73815c4bc4ac62">levelFinishedEffect</a>)</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#a3e5e4911881e826e7829e90479cec8bd">FadeAudioClip</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#a500ea18e8f2001b6ec73815c4bc4ac62">levelFinishedEffect</a>));</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="comment">// ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">switch</span> (clip) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.BoxMoved:</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#a98e12be40de779adc25644a7c8b69dd2">PlayRandomClip</a>(<span class="keyword">new</span> List&lt;AudioClip&gt; {<a class="code" href="class_program_setup_1_1_audio_manager.html#acde8b1f956f7d46d1fb6faffb6cddd5a">boxMovedEffect1</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#a806ccee934721391344ae2e35b637f12">boxMovedEffect2</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#ac140681b7fb72e87d2c23dcd696b391d">boxMovedEffect3</a>}, <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.BoxMovedInPlace:</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#a98e12be40de779adc25644a7c8b69dd2">PlayRandomClip</a>(<span class="keyword">new</span> List&lt;AudioClip&gt; {<a class="code" href="class_program_setup_1_1_audio_manager.html#ac6860206cda0724a835b1cbec568d941">boxMovedInPlaceEffect1</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#a766f8e0788c136641e9dc74170af76dc">boxMovedInPlaceEffect2</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#a8e0fa47f7308542b9db73c5850cb04c2">boxMovedInPlaceEffect3</a>}, <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.ButtonClicked:</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#a98e12be40de779adc25644a7c8b69dd2">PlayRandomClip</a>(<span class="keyword">new</span> List&lt;AudioClip&gt; {<a class="code" href="class_program_setup_1_1_audio_manager.html#a5601d9e6c4ba735fedd7c2ce7fd5cd33">buttonClickedEffect1</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#a56bad7ef8e7008d9998a21312fa9382b">buttonClickedEffect2</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#a8d9e16e409922cf80365df22313f10b2">buttonClickedEffect3</a>}, <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.LevelFinished:</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.clip = <a class="code" href="class_program_setup_1_1_audio_manager.html#a500ea18e8f2001b6ec73815c4bc4ac62">levelFinishedEffect</a>;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.Play();</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.Stop();</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        }</div>
+<p>Plays the given <a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8" title="An enum that stores all audio effect clips in the game.">AudioEffectClip</a> while smoothly transitioning away from the previous clip if one was already playing and it was over a second long. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clip</td><td>The clip that you want to start playing</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00237">237</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            var rand = <a class="code" href="class_program_setup_1_1_audio_manager.html#add095346a5e4a855122c3ecba7502d18">random</a>.Next(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac83895ef0c414522dc312c7eb7b0232f">audioEffectClipDictionary</a>[clip].Count);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            var audioClip = <a class="code" href="class_program_setup_1_1_audio_manager.html#ac83895ef0c414522dc312c7eb7b0232f">audioEffectClipDictionary</a>[clip][rand];</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.isPlaying &amp;&amp; <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.clip.length &gt; 1f)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#af18f348c42d072a001ff6d6d0a8ee61b">TransitionAudioClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#ae9f391158cb4ebdc81cbf580df05c96f">transitionAudioEffectSource</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.clip, audioClip, 1f));</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.clip = audioClip;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.Play();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -553,9 +540,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ProgramSetup.AudioManager.PlayMusic </td>
@@ -565,113 +549,30 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00159">159</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                                              {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="comment">// ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">switch</span> (clip) {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.EasyLevelMusic when <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3">easyLevelMusic</a>:</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.MediumLevelMusic when <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a4dd73d3b93f8ccac15a4dc1f5165abed">mediumLevelMusic</a>:</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.HardLevelMusic when <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a974f2f9ed2dc8cf8e3eebe34f2a89281">hardLevelMusic</a>:</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.LastLevelMusic when <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a78aaecd5686b44fb1b2f9a1f9f62823e">lastLevelMusic</a>:</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.PlayerLevelMusic when <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#ab814a60e302535aeeb42dbff23070340">playerLevelMusic</a>:</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.MenuMusic when <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a336ab5ad7c11a50c45bcb0da3be6a1f7">menuMusic</a>:</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3">easyLevelMusic</a>)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#aff64ecc7d34e21826a0722846ff6289c">easyLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a4dd73d3b93f8ccac15a4dc1f5165abed">mediumLevelMusic</a>)</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a5c461f1f818986f5bb23fe67a5ff6642">mediumLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a974f2f9ed2dc8cf8e3eebe34f2a89281">hardLevelMusic</a>)</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a8b8b3b8060ee3ccf113c2e91838ede60">hardLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a78aaecd5686b44fb1b2f9a1f9f62823e">lastLevelMusic</a>)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#abebb4ad41eadce1556e2f3c2e4619441">lastLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#ab814a60e302535aeeb42dbff23070340">playerLevelMusic</a>)</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#abeb375aff3516f05530c5a8fc7aecdea">playerLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a336ab5ad7c11a50c45bcb0da3be6a1f7">menuMusic</a>)</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#ae53f60a3222265b4116754f218bd85bf">menuMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="comment">// ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">switch</span> (clip) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.EasyLevelMusic:</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                    StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac21fca0201b7b3c0a062ab125863c168">TransitionMusicClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip, <a class="code" href="class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3">easyLevelMusic</a>));</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#aff64ecc7d34e21826a0722846ff6289c">easyLevelMusicTime</a>;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.MediumLevelMusic:</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                    StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac21fca0201b7b3c0a062ab125863c168">TransitionMusicClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip, <a class="code" href="class_program_setup_1_1_audio_manager.html#a4dd73d3b93f8ccac15a4dc1f5165abed">mediumLevelMusic</a>));</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#a5c461f1f818986f5bb23fe67a5ff6642">mediumLevelMusicTime</a>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.HardLevelMusic:</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                    StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac21fca0201b7b3c0a062ab125863c168">TransitionMusicClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip, <a class="code" href="class_program_setup_1_1_audio_manager.html#a974f2f9ed2dc8cf8e3eebe34f2a89281">hardLevelMusic</a>));</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#a8b8b3b8060ee3ccf113c2e91838ede60">hardLevelMusicTime</a>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.LastLevelMusic:</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                    StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac21fca0201b7b3c0a062ab125863c168">TransitionMusicClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip, <a class="code" href="class_program_setup_1_1_audio_manager.html#a78aaecd5686b44fb1b2f9a1f9f62823e">lastLevelMusic</a>));</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#abebb4ad41eadce1556e2f3c2e4619441">lastLevelMusicTime</a>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.PlayerLevelMusic:</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                    StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac21fca0201b7b3c0a062ab125863c168">TransitionMusicClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip, <a class="code" href="class_program_setup_1_1_audio_manager.html#ab814a60e302535aeeb42dbff23070340">playerLevelMusic</a>));</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#abeb375aff3516f05530c5a8fc7aecdea">playerLevelMusicTime</a>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>.MenuMusic:</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                    StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac21fca0201b7b3c0a062ab125863c168">TransitionMusicClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip, <a class="code" href="class_program_setup_1_1_audio_manager.html#a336ab5ad7c11a50c45bcb0da3be6a1f7">menuMusic</a>));</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#ae53f60a3222265b4116754f218bd85bf">menuMusicTime</a>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.Play();</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a98e12be40de779adc25644a7c8b69dd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98e12be40de779adc25644a7c8b69dd2">&#9670;&nbsp;</a></span>PlayRandomClip()</h2>
+<p>Plays the given <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e" title="An enum that stores all music clips in the game.">MusicClip</a> while smoothly transitioning away from the previous clip if one was already playing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clip</td><td>The music clip that you want to start playing</td></tr>
+  </table>
+  </dd>
+</dl>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ProgramSetup.AudioManager.PlayRandomClip </td>
-          <td>(</td>
-          <td class="paramtype">IReadOnlyList&lt; AudioClip &gt;&#160;</td>
-          <td class="paramname"><em>clipList</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AudioSource&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00215">215</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                                                                           {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            var rand = <a class="code" href="class_program_setup_1_1_audio_manager.html#add095346a5e4a855122c3ecba7502d18">random</a>.Next(clipList.Count);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            source.clip = clipList[rand];</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            source.Play();</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00219">219</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                              {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>[<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip] == clip)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a">musicTime</a>[(int)<a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>[<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip]] = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#af18f348c42d072a001ff6d6d0a8ee61b">TransitionAudioClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip, <a class="code" href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">musicClipDictionary</a>[clip], 1f));</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a">musicTime</a>[(int) clip];   </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.Play();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -680,9 +581,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ProgramSetup.AudioManager.SetAudioEffectsVolume </td>
@@ -692,17 +590,20 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00247">247</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                                       {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a13b62b1ddec3f65607546956af58c5e2">SetAudioMixerVolume</a>(value, <a class="code" href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd">audioEffectsMixer</a>);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        }</div>
+<p>Sets the audio effects volume on the <a class="el" href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd" title="The AudioMixer that is used for playing audio effects.">audioEffectsMixer</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value you want to change the volume to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00256">256</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                                                       {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a13b62b1ddec3f65607546956af58c5e2">SetAudioMixerVolume</a>(value, <a class="code" href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd">audioEffectsMixer</a>);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -735,15 +636,24 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00263">263</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                                                               {</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            mixer.SetFloat(<span class="stringliteral">&quot;GameVolume&quot;</span>, Mathf.Log10(value) * 20);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
+<p>Sets the volume of the passed AudioMixer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value you want to change the volume to.</td></tr>
+    <tr><td class="paramname">mixer</td><td>The AudioMixer you want to change the volume on.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00289">289</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                                                                               {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            mixer.SetFloat(<span class="stringliteral">&quot;GameVolume&quot;</span>, Mathf.Log10(value) * 20);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -752,9 +662,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ProgramSetup.AudioManager.SetMusicVolume </td>
@@ -764,17 +671,20 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00255">255</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                                                {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a13b62b1ddec3f65607546956af58c5e2">SetAudioMixerVolume</a>(value, <a class="code" href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84">musicMixer</a>);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<p>Sets the music volume on the <a class="el" href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84" title="The AudioMixer that is used for playing music.">musicMixer</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value you want to change the volume to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00272">272</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                                {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a13b62b1ddec3f65607546956af58c5e2">SetAudioMixerVolume</a>(value, <a class="code" href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84">musicMixer</a>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -783,9 +693,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ProgramSetup.AudioManager.StopAudioEffects </td>
@@ -794,18 +701,14 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00088">88</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                       {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.Stop();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.clip = <span class="keyword">null</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<p>Stops any currently playing audio effects. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00152">152</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                       {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">audioEffectsSource</a>.Stop();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -814,9 +717,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ProgramSetup.AudioManager.StopMusic </td>
@@ -825,35 +725,21 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00093">93</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3">easyLevelMusic</a>)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#aff64ecc7d34e21826a0722846ff6289c">easyLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a4dd73d3b93f8ccac15a4dc1f5165abed">mediumLevelMusic</a>)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a5c461f1f818986f5bb23fe67a5ff6642">mediumLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a974f2f9ed2dc8cf8e3eebe34f2a89281">hardLevelMusic</a>)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a8b8b3b8060ee3ccf113c2e91838ede60">hardLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a78aaecd5686b44fb1b2f9a1f9f62823e">lastLevelMusic</a>)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#abebb4ad41eadce1556e2f3c2e4619441">lastLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#ab814a60e302535aeeb42dbff23070340">playerLevelMusic</a>)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#abeb375aff3516f05530c5a8fc7aecdea">playerLevelMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip == <a class="code" href="class_program_setup_1_1_audio_manager.html#a336ab5ad7c11a50c45bcb0da3be6a1f7">menuMusic</a>)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#ae53f60a3222265b4116754f218bd85bf">menuMusicTime</a> = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#ac21fca0201b7b3c0a062ab125863c168">TransitionMusicClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip, <span class="keyword">null</span>));</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<p>Stops any currently playing music. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00159">159</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                                {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a">musicTime</a>[(int) <a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>[<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip]] = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            StartCoroutine(<a class="code" href="class_program_setup_1_1_audio_manager.html#af18f348c42d072a001ff6d6d0a8ee61b">TransitionAudioClips</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>, <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip, <span class="keyword">null</span>, 1f));</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ac21fca0201b7b3c0a062ab125863c168"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac21fca0201b7b3c0a062ab125863c168">&#9670;&nbsp;</a></span>TransitionMusicClips()</h2>
+<a id="af18f348c42d072a001ff6d6d0a8ee61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af18f348c42d072a001ff6d6d0a8ee61b">&#9670;&nbsp;</a></span>TransitionAudioClips()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -862,8 +748,20 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">IEnumerator ProgramSetup.AudioManager.TransitionMusicClips </td>
+          <td class="memname">IEnumerator ProgramSetup.AudioManager.TransitionAudioClips </td>
           <td>(</td>
+          <td class="paramtype">AudioSource&#160;</td>
+          <td class="paramname"><em>mainSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AudioSource&#160;</td>
+          <td class="paramname"><em>transitionSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">AudioClip&#160;</td>
           <td class="paramname"><em>clip1</em>, </td>
         </tr>
@@ -871,7 +769,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">AudioClip&#160;</td>
-          <td class="paramname"><em>clip2</em>&#160;</td>
+          <td class="paramname"><em>clip2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>transitionTime</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -881,44 +785,95 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00130">130</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                                                                   {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="comment">// ReSharper disable once Unity.PerformanceCriticalCodeNullComparison</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">if</span> (clip1 == <span class="keyword">null</span>) {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip = clip2;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.volume = 0.75f;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>.clip = clip1;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.time;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.clip = clip2;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>.volume = 0.75f;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.volume = 0f;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>.Play();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                var timer = 0.75f;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordflow">while</span> (timer &gt; 0f) {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                    timer -= Time.deltaTime;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>.volume = timer;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.volume = Math.Abs(timer - 0.75f);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                    yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>.volume = 0.75f;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>.volume = 0f;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <a class="code" href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">transitionMusicSource</a>.clip = <span class="keyword">null</span>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
+<p>A coroutine that smoothly transitions between two AudioClips. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mainSource</td><td>The main audio source that will continue playing clip2 after the coroutine is finished.</td></tr>
+    <tr><td class="paramname">transitionSource</td><td>The transition source that is used to transition away from clip1</td></tr>
+    <tr><td class="paramname">clip1</td><td>The clip that you want to transition away from</td></tr>
+    <tr><td class="paramname">clip2</td><td>The clip you want to transition to</td></tr>
+    <tr><td class="paramname">transitionTime</td><td>The time (in seconds) you want the transition to take</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00173">173</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                                                                                                                                               {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">if</span> (clip1 == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                mainSource.clip = clip2;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                mainSource.Play();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                yield <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            var maxVolume = 1f;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">if</span> (mainSource == <a class="code" href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">musicSource</a>)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                maxVolume = 0.75f;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            transitionSource.clip = clip1;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            transitionSource.time = mainSource.time;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            transitionSource.volume = maxVolume;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            transitionSource.Play();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            mainSource.clip = clip2;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            mainSource.volume = 0f;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">reverseMusicClipDictionary</a>.TryGetValue(clip1, out var mainSourceMusicClip)) { </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                mainSource.time = <a class="code" href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a">musicTime</a>[(int) mainSourceMusicClip];</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                mainSource.time = 0f;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            var timer = transitionTime;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">while</span> (timer &gt; 0f) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                timer -= Time.deltaTime;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                transitionSource.volume = maxVolume * (timer / transitionTime);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                mainSource.volume = Math.Abs(maxVolume * (timer / transitionTime) - 0.75f);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            mainSource.volume = maxVolume;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            transitionSource.volume = 0f;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac83895ef0c414522dc312c7eb7b0232f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83895ef0c414522dc312c7eb7b0232f">&#9670;&nbsp;</a></span>audioEffectClipDictionary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Dictionary&lt;<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>, List&lt;AudioClip&gt; &gt; ProgramSetup.AudioManager.audioEffectClipDictionary = new Dictionary&lt;<a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>, List&lt;AudioClip&gt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Associates <a class="el" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8" title="An enum that stores all audio effect clips in the game.">AudioEffectClip</a>s with the List&lt;T&gt; of their respective AudioClips </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00103">103</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+
+</div>
+</div>
 <a id="aada100b6a5e27d177cdab73ce0a487dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aada100b6a5e27d177cdab73ce0a487dd">&#9670;&nbsp;</a></span>audioEffectsMixer</h2>
 
@@ -939,7 +894,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00016">16</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p>The <a class="el" href="">AudioMixer</a> that is used for playing audio effects. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00036">36</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -963,7 +920,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00011">11</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p>The AudioSource that plays audio effects. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00016">16</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -987,7 +946,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00026">26</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00046">46</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +970,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00027">27</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00047">47</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +994,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00028">28</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00048">48</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1018,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00029">29</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00049">49</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1083,7 +1042,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00030">30</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00050">50</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1066,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00031">31</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00051">51</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1090,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00032">32</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00052">52</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1114,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00033">33</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00053">53</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1138,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00034">34</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00054">54</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1203,55 +1162,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00018">18</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-
-</div>
-</div>
-<a id="aff64ecc7d34e21826a0722846ff6289c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff64ecc7d34e21826a0722846ff6289c">&#9670;&nbsp;</a></span>easyLevelMusicTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ProgramSetup.AudioManager.easyLevelMusicTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00041">41</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-
-</div>
-</div>
-<a id="a69d64398c5d0bb3edad956b2e9d4adbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69d64398c5d0bb3edad956b2e9d4adbb">&#9670;&nbsp;</a></span>fadingAudioEffectSource</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AudioSource ProgramSetup.AudioManager.fadingAudioEffectSource</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00014">14</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00038">38</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1275,31 +1186,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00020">20</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-
-</div>
-</div>
-<a id="a8b8b3b8060ee3ccf113c2e91838ede60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b8b3b8060ee3ccf113c2e91838ede60">&#9670;&nbsp;</a></span>hardLevelMusicTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ProgramSetup.AudioManager.hardLevelMusicTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00043">43</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00040">40</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1323,7 +1210,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00038">38</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p>Used to store the single instance of the <a class="el" href="class_program_setup_1_1_audio_manager.html" title="The AudioManager is a singleton that is responsible for playing audio effects and music in the game.">AudioManager</a> singleton. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00087">87</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1347,31 +1236,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00021">21</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-
-</div>
-</div>
-<a id="abebb4ad41eadce1556e2f3c2e4619441"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abebb4ad41eadce1556e2f3c2e4619441">&#9670;&nbsp;</a></span>lastLevelMusicTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ProgramSetup.AudioManager.lastLevelMusicTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00044">44</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00041">41</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1395,7 +1260,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00025">25</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00045">45</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1419,31 +1284,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00019">19</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-
-</div>
-</div>
-<a id="a5c461f1f818986f5bb23fe67a5ff6642"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c461f1f818986f5bb23fe67a5ff6642">&#9670;&nbsp;</a></span>mediumLevelMusicTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ProgramSetup.AudioManager.mediumLevelMusicTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00042">42</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00039">39</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1467,12 +1308,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00023">23</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00043">43</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
-<a id="ae53f60a3222265b4116754f218bd85bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae53f60a3222265b4116754f218bd85bf">&#9670;&nbsp;</a></span>menuMusicTime</h2>
+<a id="a5e3d79bf7023df0cd27f341b7b989f95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e3d79bf7023df0cd27f341b7b989f95">&#9670;&nbsp;</a></span>musicClipDictionary</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1481,7 +1322,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float ProgramSetup.AudioManager.menuMusicTime</td>
+          <td class="memname">readonly Dictionary&lt;<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>, AudioClip&gt; ProgramSetup.AudioManager.musicClipDictionary = new Dictionary&lt;<a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>, AudioClip&gt;()</td>
         </tr>
       </table>
   </td>
@@ -1491,7 +1332,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00046">46</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p>Associates <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e" title="An enum that stores all music clips in the game.">MusicClip</a>s with their respective AudioClips </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00095">95</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1515,7 +1358,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00015">15</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p>The <a class="el" href="">AudioMixer</a> that is used for playing music. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00032">32</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1539,7 +1384,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00012">12</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p>The AudioSource that plays music. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00020">20</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="a4321770979dc7fb70f363a8b31f8767a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4321770979dc7fb70f363a8b31f8767a">&#9670;&nbsp;</a></span>musicTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;float&gt; ProgramSetup.AudioManager.musicTime = new List&lt;float&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores the time at which a <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e" title="An enum that stores all music clips in the game.">MusicClip</a> was last stopped so it can be resumed at that same time. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00107">107</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1563,31 +1436,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00022">22</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
-
-</div>
-</div>
-<a id="abeb375aff3516f05530c5a8fc7aecdea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeb375aff3516f05530c5a8fc7aecdea">&#9670;&nbsp;</a></span>playerLevelMusicTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ProgramSetup.AudioManager.playerLevelMusicTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00045">45</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00042">42</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1611,7 +1460,61 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00039">39</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p>Used to generate random values for playing random audio effects. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00091">91</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="ad7f27fc95cb2fa57afa136fd96d1ee46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f27fc95cb2fa57afa136fd96d1ee46">&#9670;&nbsp;</a></span>reverseMusicClipDictionary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Dictionary&lt;AudioClip, <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>&gt; ProgramSetup.AudioManager.reverseMusicClipDictionary = new Dictionary&lt;AudioClip, <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">MusicClip</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Associates AudioClips with their respective <a class="el" href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e" title="An enum that stores all music clips in the game.">MusicClip</a>s </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00099">99</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae9f391158cb4ebdc81cbf580df05c96f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f391158cb4ebdc81cbf580df05c96f">&#9670;&nbsp;</a></span>transitionAudioEffectSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioSource ProgramSetup.AudioManager.transitionAudioEffectSource</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The AudioSource that is used when transitioning between audio effects clips. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00028">28</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1635,7 +1538,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00013">13</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
+<p>The AudioSource that is used when transitioning between two music clips. </p>
+
+<p class="definition">Definition at line <a class="el" href="_audio_manager_8cs_source.html#l00024">24</a> of file <a class="el" href="_audio_manager_8cs_source.html">AudioManager.cs</a>.</p>
 
 </div>
 </div>
@@ -1644,43 +1549,29 @@ Private Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a500ea18e8f2001b6ec73815c4bc4ac62"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a500ea18e8f2001b6ec73815c4bc4ac62">ProgramSetup.AudioManager.levelFinishedEffect</a></div><div class="ttdeci">AudioClip levelFinishedEffect</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00025">AudioManager.cs:25</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ac140681b7fb72e87d2c23dcd696b391d"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ac140681b7fb72e87d2c23dcd696b391d">ProgramSetup.AudioManager.boxMovedEffect3</a></div><div class="ttdeci">AudioClip boxMovedEffect3</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00028">AudioManager.cs:28</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a332c4360d5db5f4725f28b8516d5ab84"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84">ProgramSetup.AudioManager.musicMixer</a></div><div class="ttdeci">AudioMixer musicMixer</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00015">AudioManager.cs:15</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a5c461f1f818986f5bb23fe67a5ff6642"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a5c461f1f818986f5bb23fe67a5ff6642">ProgramSetup.AudioManager.mediumLevelMusicTime</a></div><div class="ttdeci">float mediumLevelMusicTime</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00042">AudioManager.cs:42</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aff64ecc7d34e21826a0722846ff6289c"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aff64ecc7d34e21826a0722846ff6289c">ProgramSetup.AudioManager.easyLevelMusicTime</a></div><div class="ttdeci">float easyLevelMusicTime</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00041">AudioManager.cs:41</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a806ccee934721391344ae2e35b637f12"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a806ccee934721391344ae2e35b637f12">ProgramSetup.AudioManager.boxMovedEffect2</a></div><div class="ttdeci">AudioClip boxMovedEffect2</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00027">AudioManager.cs:27</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_abeb375aff3516f05530c5a8fc7aecdea"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#abeb375aff3516f05530c5a8fc7aecdea">ProgramSetup.AudioManager.playerLevelMusicTime</a></div><div class="ttdeci">float playerLevelMusicTime</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00045">AudioManager.cs:45</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ab814a60e302535aeeb42dbff23070340"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ab814a60e302535aeeb42dbff23070340">ProgramSetup.AudioManager.playerLevelMusic</a></div><div class="ttdeci">AudioClip playerLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00022">AudioManager.cs:22</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_acde8b1f956f7d46d1fb6faffb6cddd5a"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#acde8b1f956f7d46d1fb6faffb6cddd5a">ProgramSetup.AudioManager.boxMovedEffect1</a></div><div class="ttdeci">AudioClip boxMovedEffect1</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00026">AudioManager.cs:26</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a336ab5ad7c11a50c45bcb0da3be6a1f7"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a336ab5ad7c11a50c45bcb0da3be6a1f7">ProgramSetup.AudioManager.menuMusic</a></div><div class="ttdeci">AudioClip menuMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00023">AudioManager.cs:23</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ac21fca0201b7b3c0a062ab125863c168"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ac21fca0201b7b3c0a062ab125863c168">ProgramSetup.AudioManager.TransitionMusicClips</a></div><div class="ttdeci">IEnumerator TransitionMusicClips(AudioClip clip1, AudioClip clip2)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00130">AudioManager.cs:130</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a974f2f9ed2dc8cf8e3eebe34f2a89281"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a974f2f9ed2dc8cf8e3eebe34f2a89281">ProgramSetup.AudioManager.hardLevelMusic</a></div><div class="ttdeci">AudioClip hardLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00020">AudioManager.cs:20</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a8e0fa47f7308542b9db73c5850cb04c2"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a8e0fa47f7308542b9db73c5850cb04c2">ProgramSetup.AudioManager.boxMovedInPlaceEffect3</a></div><div class="ttdeci">AudioClip boxMovedInPlaceEffect3</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00031">AudioManager.cs:31</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a0ffbdedd73a4e96110b8276a73445cd3"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3">ProgramSetup.AudioManager.easyLevelMusic</a></div><div class="ttdeci">AudioClip easyLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00018">AudioManager.cs:18</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a5601d9e6c4ba735fedd7c2ce7fd5cd33"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a5601d9e6c4ba735fedd7c2ce7fd5cd33">ProgramSetup.AudioManager.buttonClickedEffect1</a></div><div class="ttdeci">AudioClip buttonClickedEffect1</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00032">AudioManager.cs:32</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a8d9e16e409922cf80365df22313f10b2"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a8d9e16e409922cf80365df22313f10b2">ProgramSetup.AudioManager.buttonClickedEffect3</a></div><div class="ttdeci">AudioClip buttonClickedEffect3</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00034">AudioManager.cs:34</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a47a54c0d899c2bf83da7ea5d8685b0ff"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">ProgramSetup.AudioManager.transitionMusicSource</a></div><div class="ttdeci">AudioSource transitionMusicSource</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00013">AudioManager.cs:13</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a8b8b3b8060ee3ccf113c2e91838ede60"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a8b8b3b8060ee3ccf113c2e91838ede60">ProgramSetup.AudioManager.hardLevelMusicTime</a></div><div class="ttdeci">float hardLevelMusicTime</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00043">AudioManager.cs:43</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ae53f60a3222265b4116754f218bd85bf"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ae53f60a3222265b4116754f218bd85bf">ProgramSetup.AudioManager.menuMusicTime</a></div><div class="ttdeci">float menuMusicTime</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00046">AudioManager.cs:46</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a4dd73d3b93f8ccac15a4dc1f5165abed"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a4dd73d3b93f8ccac15a4dc1f5165abed">ProgramSetup.AudioManager.mediumLevelMusic</a></div><div class="ttdeci">AudioClip mediumLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00019">AudioManager.cs:19</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aadcb94f8cf95d44cde03bd2795b692ca"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">ProgramSetup.AudioManager.musicSource</a></div><div class="ttdeci">AudioSource musicSource</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00012">AudioManager.cs:12</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ac62dd355aab2a529d7ebfbc74255493e"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">ProgramSetup.AudioManager.MusicClip</a></div><div class="ttdeci">MusicClip</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00050">AudioManager.cs:50</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a9a9dd2aa44274b90725f64ef08c67ac8"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">ProgramSetup.AudioManager.AudioEffectClip</a></div><div class="ttdeci">AudioEffectClip</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00058">AudioManager.cs:58</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a56bad7ef8e7008d9998a21312fa9382b"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a56bad7ef8e7008d9998a21312fa9382b">ProgramSetup.AudioManager.buttonClickedEffect2</a></div><div class="ttdeci">AudioClip buttonClickedEffect2</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00033">AudioManager.cs:33</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a69d64398c5d0bb3edad956b2e9d4adbb"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a69d64398c5d0bb3edad956b2e9d4adbb">ProgramSetup.AudioManager.fadingAudioEffectSource</a></div><div class="ttdeci">AudioSource fadingAudioEffectSource</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00014">AudioManager.cs:14</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aca2f0503bb079e0a289d0c6e698c6c93"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">ProgramSetup.AudioManager.Instance</a></div><div class="ttdeci">static AudioManager Instance</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00038">AudioManager.cs:38</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ac6860206cda0724a835b1cbec568d941"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ac6860206cda0724a835b1cbec568d941">ProgramSetup.AudioManager.boxMovedInPlaceEffect1</a></div><div class="ttdeci">AudioClip boxMovedInPlaceEffect1</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00029">AudioManager.cs:29</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a98e12be40de779adc25644a7c8b69dd2"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a98e12be40de779adc25644a7c8b69dd2">ProgramSetup.AudioManager.PlayRandomClip</a></div><div class="ttdeci">void PlayRandomClip(IReadOnlyList&lt; AudioClip &gt; clipList, AudioSource source)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00215">AudioManager.cs:215</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ae70ed714ac2545d04b954b3f06483467"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">ProgramSetup.AudioManager.audioEffectsSource</a></div><div class="ttdeci">AudioSource audioEffectsSource</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00011">AudioManager.cs:11</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aada100b6a5e27d177cdab73ce0a487dd"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd">ProgramSetup.AudioManager.audioEffectsMixer</a></div><div class="ttdeci">AudioMixer audioEffectsMixer</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00016">AudioManager.cs:16</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a13b62b1ddec3f65607546956af58c5e2"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a13b62b1ddec3f65607546956af58c5e2">ProgramSetup.AudioManager.SetAudioMixerVolume</a></div><div class="ttdeci">static void SetAudioMixerVolume(float value, AudioMixer mixer)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00263">AudioManager.cs:263</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a766f8e0788c136641e9dc74170af76dc"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a766f8e0788c136641e9dc74170af76dc">ProgramSetup.AudioManager.boxMovedInPlaceEffect2</a></div><div class="ttdeci">AudioClip boxMovedInPlaceEffect2</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00030">AudioManager.cs:30</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_add095346a5e4a855122c3ecba7502d18"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#add095346a5e4a855122c3ecba7502d18">ProgramSetup.AudioManager.random</a></div><div class="ttdeci">readonly System.Random random</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00039">AudioManager.cs:39</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a78aaecd5686b44fb1b2f9a1f9f62823e"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a78aaecd5686b44fb1b2f9a1f9f62823e">ProgramSetup.AudioManager.lastLevelMusic</a></div><div class="ttdeci">AudioClip lastLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00021">AudioManager.cs:21</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a94138051d742e8914e42a682d334946e"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a94138051d742e8914e42a682d334946e">ProgramSetup.AudioManager.GetAudioMixerVolume</a></div><div class="ttdeci">static float GetAudioMixerVolume(AudioMixer mixer)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00267">AudioManager.cs:267</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_abebb4ad41eadce1556e2f3c2e4619441"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#abebb4ad41eadce1556e2f3c2e4619441">ProgramSetup.AudioManager.lastLevelMusicTime</a></div><div class="ttdeci">float lastLevelMusicTime</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00044">AudioManager.cs:44</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a3e5e4911881e826e7829e90479cec8bd"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a3e5e4911881e826e7829e90479cec8bd">ProgramSetup.AudioManager.FadeAudioClip</a></div><div class="ttdeci">IEnumerator FadeAudioClip(AudioClip clip)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00110">AudioManager.cs:110</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a332c4360d5db5f4725f28b8516d5ab84"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a332c4360d5db5f4725f28b8516d5ab84">ProgramSetup.AudioManager.musicMixer</a></div><div class="ttdeci">AudioMixer musicMixer</div><div class="ttdoc">The AudioMixer that is used for playing music.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00032">AudioManager.cs:32</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ae9f391158cb4ebdc81cbf580df05c96f"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ae9f391158cb4ebdc81cbf580df05c96f">ProgramSetup.AudioManager.transitionAudioEffectSource</a></div><div class="ttdeci">AudioSource transitionAudioEffectSource</div><div class="ttdoc">The AudioSource that is used when transitioning between audio effects clips.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00028">AudioManager.cs:28</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ab814a60e302535aeeb42dbff23070340"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ab814a60e302535aeeb42dbff23070340">ProgramSetup.AudioManager.playerLevelMusic</a></div><div class="ttdeci">AudioClip playerLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00042">AudioManager.cs:42</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a336ab5ad7c11a50c45bcb0da3be6a1f7"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a336ab5ad7c11a50c45bcb0da3be6a1f7">ProgramSetup.AudioManager.menuMusic</a></div><div class="ttdeci">AudioClip menuMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00043">AudioManager.cs:43</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a974f2f9ed2dc8cf8e3eebe34f2a89281"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a974f2f9ed2dc8cf8e3eebe34f2a89281">ProgramSetup.AudioManager.hardLevelMusic</a></div><div class="ttdeci">AudioClip hardLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00040">AudioManager.cs:40</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a0ffbdedd73a4e96110b8276a73445cd3"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3">ProgramSetup.AudioManager.easyLevelMusic</a></div><div class="ttdeci">AudioClip easyLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00038">AudioManager.cs:38</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a47a54c0d899c2bf83da7ea5d8685b0ff"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a47a54c0d899c2bf83da7ea5d8685b0ff">ProgramSetup.AudioManager.transitionMusicSource</a></div><div class="ttdeci">AudioSource transitionMusicSource</div><div class="ttdoc">The AudioSource that is used when transitioning between two music clips.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00024">AudioManager.cs:24</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a4dd73d3b93f8ccac15a4dc1f5165abed"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a4dd73d3b93f8ccac15a4dc1f5165abed">ProgramSetup.AudioManager.mediumLevelMusic</a></div><div class="ttdeci">AudioClip mediumLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00039">AudioManager.cs:39</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aadcb94f8cf95d44cde03bd2795b692ca"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aadcb94f8cf95d44cde03bd2795b692ca">ProgramSetup.AudioManager.musicSource</a></div><div class="ttdeci">AudioSource musicSource</div><div class="ttdoc">The AudioSource that plays music.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00020">AudioManager.cs:20</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ad7f27fc95cb2fa57afa136fd96d1ee46"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ad7f27fc95cb2fa57afa136fd96d1ee46">ProgramSetup.AudioManager.reverseMusicClipDictionary</a></div><div class="ttdeci">readonly Dictionary&lt; AudioClip, MusicClip &gt; reverseMusicClipDictionary</div><div class="ttdoc">Associates AudioClips with their respective MusicClips</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00099">AudioManager.cs:99</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ac62dd355aab2a529d7ebfbc74255493e"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e">ProgramSetup.AudioManager.MusicClip</a></div><div class="ttdeci">MusicClip</div><div class="ttdoc">An enum that stores all music clips in the game.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00061">AudioManager.cs:61</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a9a9dd2aa44274b90725f64ef08c67ac8"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">ProgramSetup.AudioManager.AudioEffectClip</a></div><div class="ttdeci">AudioEffectClip</div><div class="ttdoc">An enum that stores all audio effect clips in the game.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00074">AudioManager.cs:74</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a5e3d79bf7023df0cd27f341b7b989f95"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a5e3d79bf7023df0cd27f341b7b989f95">ProgramSetup.AudioManager.musicClipDictionary</a></div><div class="ttdeci">readonly Dictionary&lt; MusicClip, AudioClip &gt; musicClipDictionary</div><div class="ttdoc">Associates MusicClips with their respective AudioClips</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00095">AudioManager.cs:95</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aca2f0503bb079e0a289d0c6e698c6c93"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">ProgramSetup.AudioManager.Instance</a></div><div class="ttdeci">static AudioManager Instance</div><div class="ttdoc">Used to store the single instance of the AudioManager singleton.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00087">AudioManager.cs:87</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a4321770979dc7fb70f363a8b31f8767a"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a4321770979dc7fb70f363a8b31f8767a">ProgramSetup.AudioManager.musicTime</a></div><div class="ttdeci">readonly List&lt; float &gt; musicTime</div><div class="ttdoc">Stores the time at which a MusicClip was last stopped so it can be resumed at that same time.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00107">AudioManager.cs:107</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ae70ed714ac2545d04b954b3f06483467"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ae70ed714ac2545d04b954b3f06483467">ProgramSetup.AudioManager.audioEffectsSource</a></div><div class="ttdeci">AudioSource audioEffectsSource</div><div class="ttdoc">The AudioSource that plays audio effects.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00016">AudioManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aada100b6a5e27d177cdab73ce0a487dd"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aada100b6a5e27d177cdab73ce0a487dd">ProgramSetup.AudioManager.audioEffectsMixer</a></div><div class="ttdeci">AudioMixer audioEffectsMixer</div><div class="ttdoc">The AudioMixer that is used for playing audio effects.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00036">AudioManager.cs:36</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a13b62b1ddec3f65607546956af58c5e2"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a13b62b1ddec3f65607546956af58c5e2">ProgramSetup.AudioManager.SetAudioMixerVolume</a></div><div class="ttdeci">static void SetAudioMixerVolume(float value, AudioMixer mixer)</div><div class="ttdoc">Sets the volume of the passed AudioMixer</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00289">AudioManager.cs:289</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_ac83895ef0c414522dc312c7eb7b0232f"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#ac83895ef0c414522dc312c7eb7b0232f">ProgramSetup.AudioManager.audioEffectClipDictionary</a></div><div class="ttdeci">readonly Dictionary&lt; AudioEffectClip, List&lt; AudioClip &gt; &gt; audioEffectClipDictionary</div><div class="ttdoc">Associates AudioEffectClips with the List&lt;T&gt; of their respective AudioClips</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00103">AudioManager.cs:103</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_add095346a5e4a855122c3ecba7502d18"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#add095346a5e4a855122c3ecba7502d18">ProgramSetup.AudioManager.random</a></div><div class="ttdeci">readonly System.Random random</div><div class="ttdoc">Used to generate random values for playing random audio effects.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00091">AudioManager.cs:91</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a78aaecd5686b44fb1b2f9a1f9f62823e"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a78aaecd5686b44fb1b2f9a1f9f62823e">ProgramSetup.AudioManager.lastLevelMusic</a></div><div class="ttdeci">AudioClip lastLevelMusic</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00041">AudioManager.cs:41</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a94138051d742e8914e42a682d334946e"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a94138051d742e8914e42a682d334946e">ProgramSetup.AudioManager.GetAudioMixerVolume</a></div><div class="ttdeci">static float GetAudioMixerVolume(AudioMixer mixer)</div><div class="ttdoc">Gets the volume of the passed AudioMixer</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00298">AudioManager.cs:298</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_af18f348c42d072a001ff6d6d0a8ee61b"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#af18f348c42d072a001ff6d6d0a8ee61b">ProgramSetup.AudioManager.TransitionAudioClips</a></div><div class="ttdeci">IEnumerator TransitionAudioClips(AudioSource mainSource, AudioSource transitionSource, AudioClip clip1, AudioClip clip2, float transitionTime)</div><div class="ttdoc">A coroutine that smoothly transitions between two AudioClips.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00173">AudioManager.cs:173</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

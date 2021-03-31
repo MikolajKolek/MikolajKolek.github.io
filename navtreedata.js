@@ -32,8 +32,8 @@ var NAVTREE =
     [ "Internationalization", "md__c___users_kolek__desktop__programowanie__programy__unity__sokoban__sokoban__assets__scripts_internationalization.html", [
       [ "Adding languages", "md__c___users_kolek__desktop__programowanie__programy__unity__sokoban__sokoban__assets__scripts_internationalization.html#autotoc_md4", null ]
     ] ],
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+    [ "Packages", "namespaces.html", [
+      [ "Packages", "namespaces.html", "namespaces_dup" ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -59,9 +59,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_audio_manager_8cs.html",
-"class_game_scene2_1_1_profile_manager.html#a315c2d68caf20bbb72eee1ee851d6068",
-"class_game_scene3_1_1_save_data2.html#afbcc000b55a66264712ae6ac8bcc4dd4",
-"class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493e"
+"class_game_scene2_1_1_profile_manager.html#a896823bed4bfcbdbe7f9397abbce7efc",
+"class_game_scene3_1_1_save_data_registry.html#a24289500563c44ab550eeb0f8f0ae993",
+"class_program_setup_1_1_audio_manager.html#ac6860206cda0724a835b1cbec568d941"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

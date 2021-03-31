@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['easy_101',['Easy',['../struct_game_scene1_1_1_level.html#ae6152694d04048d78127a1af1cfac638a7f943921724d63dc0ac9c6febf99fa88',1,'GameScene1::Level']]],
-  ['easybuttonlist_102',['easyButtonList',['../class_game_scene1_1_1_level_selection_screen.html#a333ffee4117ed250b9c71200c5d419f2',1,'GameScene1::LevelSelectionScreen']]],
-  ['easyitemcontent_103',['easyItemContent',['../class_game_scene1_1_1_level_selection_screen.html#adf4a98b3e3e7f05310fd16b279c19e71',1,'GameScene1::LevelSelectionScreen']]],
-  ['easylevelmusic_104',['easyLevelMusic',['../class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3',1,'ProgramSetup.AudioManager.easyLevelMusic()'],['../class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea113168106fdb3cb0f4f6042e8e8c1fed',1,'ProgramSetup.AudioManager.EasyLevelMusic()']]],
-  ['easylevelmusictime_105',['easyLevelMusicTime',['../class_program_setup_1_1_audio_manager.html#aff64ecc7d34e21826a0722846ff6289c',1,'ProgramSetup::AudioManager']]],
+  ['easy_102',['Easy',['../struct_game_scene1_1_1_level.html#ae6152694d04048d78127a1af1cfac638a7f943921724d63dc0ac9c6febf99fa88',1,'GameScene1::Level']]],
+  ['easybuttonlist_103',['easyButtonList',['../class_game_scene1_1_1_level_selection_screen.html#a333ffee4117ed250b9c71200c5d419f2',1,'GameScene1::LevelSelectionScreen']]],
+  ['easyitemcontent_104',['easyItemContent',['../class_game_scene1_1_1_level_selection_screen.html#adf4a98b3e3e7f05310fd16b279c19e71',1,'GameScene1::LevelSelectionScreen']]],
+  ['easylevelmusic_105',['easyLevelMusic',['../class_program_setup_1_1_audio_manager.html#a0ffbdedd73a4e96110b8276a73445cd3',1,'ProgramSetup.AudioManager.easyLevelMusic()'],['../class_program_setup_1_1_audio_manager.html#ac62dd355aab2a529d7ebfbc74255493ea113168106fdb3cb0f4f6042e8e8c1fed',1,'ProgramSetup.AudioManager.EasyLevelMusic()']]],
   ['easylevelscategorytext_106',['easyLevelsCategoryText',['../class_internationalization_1_1_game_scene1_translator.html#a286d7816ea26e6a3cd01b00302c94e85',1,'Internationalization::GameScene1Translator']]],
   ['editlevel_107',['EditLevel',['../class_game_scene3_1_1_level_selection_screen3.html#a1143be88ecfb7818b90128463a2a224d',1,'GameScene3::LevelSelectionScreen3']]],
   ['editlevelbutton_108',['editLevelButton',['../class_game_scene3_1_1_level_selection_screen3.html#aa418c61e43017f9841f5fc8fc22a9a78',1,'GameScene3::LevelSelectionScreen3']]],

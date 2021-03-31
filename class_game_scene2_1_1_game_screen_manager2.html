@@ -29,7 +29,7 @@
    <div id="projectname">Sokoban
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Made by Mikołaj Kołek and Łukasz Prokop</div>
+   <div id="projectbrief">Made by Mikołaj Kołek, Łukasz Prokop and Witold Kędra</div>
   </td>
  </tr>
  </tbody>
@@ -94,34 +94,46 @@ $(document).ready(function(){initNavTree('class_game_scene2_1_1_game_screen_mana
 <div class="title">GameScene2.GameScreenManager2 Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages everything that happens in the game on stage 2.  
+ <a href="class_game_scene2_1_1_game_screen_manager2.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abebb33bceb47295051834a9f6e23a521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene2_1_1_game_screen_manager2.html#abebb33bceb47295051834a9f6e23a521">LoadSaveData</a> ()</td></tr>
+<tr class="memdesc:abebb33bceb47295051834a9f6e23a521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls gameTilemapAdapter.LoadSaveData() to load the save data from the currently selected profile.  <a href="class_game_scene2_1_1_game_screen_manager2.html#abebb33bceb47295051834a9f6e23a521">More...</a><br /></td></tr>
 <tr class="separator:abebb33bceb47295051834a9f6e23a521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8134dfdfbaa391a29408e42d5347691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene2_1_1_game_screen_manager2.html#ae8134dfdfbaa391a29408e42d5347691">SaveGameData</a> ()</td></tr>
+<tr class="memdesc:ae8134dfdfbaa391a29408e42d5347691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls gameTilemapAdapter.SaveGameData() to save save data to the currently selected profile and also shows the text "Saved" on the screen by calling <a class="el" href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1" title="This coroutine shows the text &quot;Saved&quot; on the screen and then fades it away over the course of a secon...">ShowSavedText</a>.  <a href="class_game_scene2_1_1_game_screen_manager2.html#ae8134dfdfbaa391a29408e42d5347691">More...</a><br /></td></tr>
 <tr class="separator:ae8134dfdfbaa391a29408e42d5347691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d418c1fc13092e1f7ad497a4e86edeb"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene2_1_1_game_screen_manager2.html#a6d418c1fc13092e1f7ad497a4e86edeb">LeaveGame</a> (bool playButtonClick)</td></tr>
+<tr class="memdesc:a6d418c1fc13092e1f7ad497a4e86edeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">LeaveGame overriders the LeaveGame method of GameScreenManager to make sure the SavedText from <a class="el" href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1" title="This coroutine shows the text &quot;Saved&quot; on the screen and then fades it away over the course of a secon...">ShowSavedText</a> doesn't remain on screen.  <a href="class_game_scene2_1_1_game_screen_manager2.html#a6d418c1fc13092e1f7ad497a4e86edeb">More...</a><br /></td></tr>
 <tr class="separator:a6d418c1fc13092e1f7ad497a4e86edeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_game_scene1_1_1_game_screen_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_game_scene1_1_1_game_screen_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_game_scene1_1_1_game_screen_manager.html">GameScene1.GameScreenManager</a></td></tr>
 <tr class="memitem:a1b78f8ed59531cca2369a958884ae804 inherit pub_methods_class_game_scene1_1_1_game_screen_manager"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_game_screen_manager.html#a1b78f8ed59531cca2369a958884ae804">RestartLevel</a> ()</td></tr>
+<tr class="memdesc:a1b78f8ed59531cca2369a958884ae804 inherit pub_methods_class_game_scene1_1_1_game_screen_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restarts the level.  <a href="class_game_scene1_1_1_game_screen_manager.html#a1b78f8ed59531cca2369a958884ae804">More...</a><br /></td></tr>
 <tr class="separator:a1b78f8ed59531cca2369a958884ae804 inherit pub_methods_class_game_scene1_1_1_game_screen_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31f93d9ef36a9af1826db6daba4758ed inherit pub_methods_class_game_scene1_1_1_game_screen_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_game_screen_manager.html#a31f93d9ef36a9af1826db6daba4758ed">LoadLevel</a> (int levelRegistryId)</td></tr>
+<tr class="memdesc:a31f93d9ef36a9af1826db6daba4758ed inherit pub_methods_class_game_scene1_1_1_game_screen_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a level corresponding to the registry ID.  <a href="class_game_scene1_1_1_game_screen_manager.html#a31f93d9ef36a9af1826db6daba4758ed">More...</a><br /></td></tr>
 <tr class="separator:a31f93d9ef36a9af1826db6daba4758ed inherit pub_methods_class_game_scene1_1_1_game_screen_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd7f05eee08c3440fae0da018d85012 inherit pub_methods_class_game_scene1_1_1_game_screen_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_game_screen_manager.html#aebd7f05eee08c3440fae0da018d85012">LoadLevel</a> (<a class="el" href="struct_game_scene1_1_1_level.html">Level</a> level)</td></tr>
+<tr class="memdesc:aebd7f05eee08c3440fae0da018d85012 inherit pub_methods_class_game_scene1_1_1_game_screen_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given level.  <a href="class_game_scene1_1_1_game_screen_manager.html#aebd7f05eee08c3440fae0da018d85012">More...</a><br /></td></tr>
 <tr class="separator:aebd7f05eee08c3440fae0da018d85012 inherit pub_methods_class_game_scene1_1_1_game_screen_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a11b1d0e2d41ba1b80eba4e79c81caa92"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene2_1_1_game_screen_manager2.html#a11b1d0e2d41ba1b80eba4e79c81caa92">FinishLevelEvent</a> ()</td></tr>
+<tr class="memdesc:a11b1d0e2d41ba1b80eba4e79c81caa92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides the GameScreenManager's FinishLevelEvent to add a score text to the levelFinishObject.  <a href="class_game_scene2_1_1_game_screen_manager2.html#a11b1d0e2d41ba1b80eba4e79c81caa92">More...</a><br /></td></tr>
 <tr class="separator:a11b1d0e2d41ba1b80eba4e79c81caa92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_game_scene1_1_1_game_screen_manager"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_game_scene1_1_1_game_screen_manager')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_game_scene1_1_1_game_screen_manager.html">GameScene1.GameScreenManager</a></td></tr>
 <tr class="memitem:afbfc7752d2fc2edf58f60360b3b96258 inherit pro_methods_class_game_scene1_1_1_game_screen_manager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_game_screen_manager.html#afbfc7752d2fc2edf58f60360b3b96258">Start</a> ()</td></tr>
+<tr class="memdesc:afbfc7752d2fc2edf58f60360b3b96258 inherit pro_methods_class_game_scene1_1_1_game_screen_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start sets all the events of <a class="el" href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">gameTilemapAdapter</a> to their respective methods.  <a href="class_game_scene1_1_1_game_screen_manager.html#afbfc7752d2fc2edf58f60360b3b96258">More...</a><br /></td></tr>
 <tr class="separator:afbfc7752d2fc2edf58f60360b3b96258 inherit pro_methods_class_game_scene1_1_1_game_screen_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a36ac214ad5eb1c9083f9a5e51402c7a1"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1">ShowSavedText</a> ()</td></tr>
+<tr class="memdesc:a36ac214ad5eb1c9083f9a5e51402c7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This coroutine shows the text "Saved" on the screen and then fades it away over the course of a second.  <a href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1">More...</a><br /></td></tr>
 <tr class="separator:a36ac214ad5eb1c9083f9a5e51402c7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -150,8 +162,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a0d9390f97198cefc8b8e1cc2b16c9e84 inherit pro_attribs_class_game_scene1_1_1_game_screen_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00009">9</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<div class="textblock"><p>Manages everything that happens in the game on stage 2. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00012">12</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a11b1d0e2d41ba1b80eba4e79c81caa92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11b1d0e2d41ba1b80eba4e79c81caa92">&#9670;&nbsp;</a></span>FinishLevelEvent()</h2>
@@ -171,22 +184,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Overrides the GameScreenManager's FinishLevelEvent to add a score text to the levelFinishObject. </p>
+
 <p>Reimplemented from <a class="el" href="class_game_scene1_1_1_game_screen_manager.html#a82219896046cf93d80f9b46ac390b096">GameScene1.GameScreenManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00016">16</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                   {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            var score = (int) ((TilemapGameAdapter2) <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">gameTilemapAdapter</a>).newLevelScore;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4eb73a3611539fedead9d8057f34fdf1">scoreText</a>.text = <a class="code" href="class_internationalization_1_1_translator.html">Translator</a>.<a class="code" href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">GetTranslation</a>(<span class="stringliteral">&quot;gamescene.game.score.counter&quot;</span>) + score + <span class="stringliteral">&quot;/100&quot;</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">if</span> (((TilemapGameAdapter2) <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">gameTilemapAdapter</a>).isHighScore)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4eb73a3611539fedead9d8057f34fdf1">scoreText</a>.text += <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="class_internationalization_1_1_translator.html">Translator</a>.<a class="code" href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">GetTranslation</a>(<span class="stringliteral">&quot;gamescene.game.newrecord.text&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            base.FinishLevelEvent();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00022">22</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                                   {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            var score = (int) ((TilemapGameAdapter2) <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">gameTilemapAdapter</a>).newLevelScore;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4eb73a3611539fedead9d8057f34fdf1">scoreText</a>.text = <a class="code" href="class_internationalization_1_1_translator.html">Translator</a>.<a class="code" href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">GetTranslation</a>(<span class="stringliteral">&quot;gamescene.game.score.counter&quot;</span>) + score + <span class="stringliteral">&quot;/100&quot;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (((TilemapGameAdapter2) <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">gameTilemapAdapter</a>).isHighScore)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4eb73a3611539fedead9d8057f34fdf1">scoreText</a>.text += <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="class_internationalization_1_1_translator.html">Translator</a>.<a class="code" href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">GetTranslation</a>(<span class="stringliteral">&quot;gamescene.game.newrecord.text&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            base.FinishLevelEvent();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -209,20 +224,28 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>LeaveGame overriders the LeaveGame method of GameScreenManager to make sure the SavedText from <a class="el" href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1" title="This coroutine shows the text &quot;Saved&quot; on the screen and then fades it away over the course of a secon...">ShowSavedText</a> doesn't remain on screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playButtonClick</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Reimplemented from <a class="el" href="class_game_scene1_1_1_game_screen_manager.html#a771f87bf3e3d189d7bad2041ea93a79e">GameScene1.GameScreenManager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00051">51</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                             {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            StopAllCoroutines();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">savedText</a>.alpha = 0f;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            base.LeaveGame(playButtonClick);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00071">71</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                             {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            StopAllCoroutines();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">savedText</a>.alpha = 0f;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            base.LeaveGame(playButtonClick);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -231,9 +254,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GameScene2.GameScreenManager2.LoadSaveData </td>
@@ -242,22 +262,19 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00025">25</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                   {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#afbfc7752d2fc2edf58f60360b3b96258">Start</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a5d737553361f5e436bb364f568310800">screenHeight</a> = Screen.height;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a0d9390f97198cefc8b8e1cc2b16c9e84">screenWidth</a> = Screen.width;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a28478285a462365dad79939067eb2941">gameActive</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            ((TilemapGameAdapter2) <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">gameTilemapAdapter</a>).LoadSaveData();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<p>Calls gameTilemapAdapter.LoadSaveData() to load the save data from the currently selected profile. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00034">34</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                   {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#afbfc7752d2fc2edf58f60360b3b96258">Start</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a5d737553361f5e436bb364f568310800">screenHeight</a> = Screen.height;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a0d9390f97198cefc8b8e1cc2b16c9e84">screenWidth</a> = Screen.width;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a28478285a462365dad79939067eb2941">gameActive</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            ((TilemapGameAdapter2) <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">gameTilemapAdapter</a>).LoadSaveData();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -266,9 +283,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GameScene2.GameScreenManager2.SaveGameData </td>
@@ -277,21 +291,18 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00034">34</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                   {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#aedd33a74c768e33bbeaad5c7b803d3e6">loadSaveDataButton</a>.interactable = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a44cd4c57a544b7f0d36eca9a65d879cf">loadSaveDataButtonText</a>.alpha = 1f;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            ((TilemapGameAdapter2) <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">gameTilemapAdapter</a>).SaveGameData();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            StartCoroutine(<a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1">ShowSavedText</a>());</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<p>Calls gameTilemapAdapter.SaveGameData() to save save data to the currently selected profile and also shows the text "Saved" on the screen by calling <a class="el" href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1" title="This coroutine shows the text &quot;Saved&quot; on the screen and then fades it away over the course of a secon...">ShowSavedText</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00046">46</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                   {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#aedd33a74c768e33bbeaad5c7b803d3e6">loadSaveDataButton</a>.interactable = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a44cd4c57a544b7f0d36eca9a65d879cf">loadSaveDataButtonText</a>.alpha = 1f;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            ((TilemapGameAdapter2) <a class="code" href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">gameTilemapAdapter</a>).SaveGameData();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            StartCoroutine(<a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1">ShowSavedText</a>());</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,20 +324,23 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00042">42</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                            {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">savedText</a>.alpha = 1f;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">savedText</a>.alpha &gt; 0f) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">savedText</a>.alpha -= Time.deltaTime;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<p>This coroutine shows the text "Saved" on the screen and then fades it away over the course of a second. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00058">58</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                            {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">savedText</a>.alpha = 1f;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">savedText</a>.alpha &gt; 0f) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">savedText</a>.alpha -= Time.deltaTime;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00011">11</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00014">14</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
 
 </div>
 </div>
@@ -375,7 +389,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00012">12</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00015">15</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
 
 </div>
 </div>
@@ -399,7 +413,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00013">13</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00016">16</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
 
 </div>
 </div>
@@ -423,7 +437,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00010">10</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_screen_manager2_8cs_source.html#l00013">13</a> of file <a class="el" href="_game_screen_manager2_8cs_source.html">GameScreenManager2.cs</a>.</p>
 
 </div>
 </div>
@@ -432,18 +446,18 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_a4f88386ff61976ee415b068198e65c7e"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">GameScene2.GameScreenManager2.savedText</a></div><div class="ttdeci">TMP_Text savedText</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00013">GameScreenManager2.cs:13</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_a5d737553361f5e436bb364f568310800"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#a5d737553361f5e436bb364f568310800">GameScene1.GameScreenManager.screenHeight</a></div><div class="ttdeci">int screenHeight</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00025">GameScreenManager.cs:25</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_a44cd4c57a544b7f0d36eca9a65d879cf"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#a44cd4c57a544b7f0d36eca9a65d879cf">GameScene2.GameScreenManager2.loadSaveDataButtonText</a></div><div class="ttdeci">TMP_Text loadSaveDataButtonText</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00012">GameScreenManager2.cs:12</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_a36ac214ad5eb1c9083f9a5e51402c7a1"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1">GameScene2.GameScreenManager2.ShowSavedText</a></div><div class="ttdeci">IEnumerator ShowSavedText()</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00042">GameScreenManager2.cs:42</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_afbfc7752d2fc2edf58f60360b3b96258"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#afbfc7752d2fc2edf58f60360b3b96258">GameScene1.GameScreenManager.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00030">GameScreenManager.cs:30</a></div></div>
-<div class="ttc" id="aclass_internationalization_1_1_translator_html_a99be1edbc73d9c527f777c527811ddee"><div class="ttname"><a href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">Internationalization.Translator.GetTranslation</a></div><div class="ttdeci">static string GetTranslation(string key)</div><div class="ttdoc">Returns the translation of the provided key to the language selected in Translator....</div><div class="ttdef"><b>Definition:</b> <a href="_translator_8cs_source.html#l00095">Translator.cs:95</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_a0d9390f97198cefc8b8e1cc2b16c9e84"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#a0d9390f97198cefc8b8e1cc2b16c9e84">GameScene1.GameScreenManager.screenWidth</a></div><div class="ttdeci">int screenWidth</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00026">GameScreenManager.cs:26</a></div></div>
-<div class="ttc" id="aclass_internationalization_1_1_translator_html"><div class="ttname"><a href="class_internationalization_1_1_translator.html">Internationalization.Translator</a></div><div class="ttdoc">Adds an easily expandable localization system.</div><div class="ttdef"><b>Definition:</b> <a href="_translator_8cs_source.html#l00016">Translator.cs:16</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_a28478285a462365dad79939067eb2941"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#a28478285a462365dad79939067eb2941">GameScene1.GameScreenManager.gameActive</a></div><div class="ttdeci">bool gameActive</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00023">GameScreenManager.cs:23</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_a4eb73a3611539fedead9d8057f34fdf1"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#a4eb73a3611539fedead9d8057f34fdf1">GameScene2.GameScreenManager2.scoreText</a></div><div class="ttdeci">TMP_Text scoreText</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00010">GameScreenManager2.cs:10</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_a991e64fb364aeab9e2e7a7dfd87a39d9"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">GameScene1.GameScreenManager.gameTilemapAdapter</a></div><div class="ttdeci">TilemapGameAdapter gameTilemapAdapter</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00013">GameScreenManager.cs:13</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_aedd33a74c768e33bbeaad5c7b803d3e6"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#aedd33a74c768e33bbeaad5c7b803d3e6">GameScene2.GameScreenManager2.loadSaveDataButton</a></div><div class="ttdeci">Button loadSaveDataButton</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00011">GameScreenManager2.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_a4f88386ff61976ee415b068198e65c7e"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#a4f88386ff61976ee415b068198e65c7e">GameScene2.GameScreenManager2.savedText</a></div><div class="ttdeci">TMP_Text savedText</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00016">GameScreenManager2.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_a5d737553361f5e436bb364f568310800"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#a5d737553361f5e436bb364f568310800">GameScene1.GameScreenManager.screenHeight</a></div><div class="ttdeci">int screenHeight</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00028">GameScreenManager.cs:28</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_a44cd4c57a544b7f0d36eca9a65d879cf"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#a44cd4c57a544b7f0d36eca9a65d879cf">GameScene2.GameScreenManager2.loadSaveDataButtonText</a></div><div class="ttdeci">TMP_Text loadSaveDataButtonText</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00015">GameScreenManager2.cs:15</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_a36ac214ad5eb1c9083f9a5e51402c7a1"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#a36ac214ad5eb1c9083f9a5e51402c7a1">GameScene2.GameScreenManager2.ShowSavedText</a></div><div class="ttdeci">IEnumerator ShowSavedText()</div><div class="ttdoc">This coroutine shows the text &quot;Saved&quot; on the screen and then fades it away over the course of a secon...</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00058">GameScreenManager2.cs:58</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_afbfc7752d2fc2edf58f60360b3b96258"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#afbfc7752d2fc2edf58f60360b3b96258">GameScene1.GameScreenManager.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">Start sets all the events of gameTilemapAdapter to their respective methods.</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00036">GameScreenManager.cs:36</a></div></div>
+<div class="ttc" id="aclass_internationalization_1_1_translator_html_a99be1edbc73d9c527f777c527811ddee"><div class="ttname"><a href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">Internationalization.Translator.GetTranslation</a></div><div class="ttdeci">static string GetTranslation(string key)</div><div class="ttdoc">Returns the translation of the provided key to the language selected in Translator....</div><div class="ttdef"><b>Definition:</b> <a href="_translator_8cs_source.html#l00098">Translator.cs:98</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_a0d9390f97198cefc8b8e1cc2b16c9e84"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#a0d9390f97198cefc8b8e1cc2b16c9e84">GameScene1.GameScreenManager.screenWidth</a></div><div class="ttdeci">int screenWidth</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00029">GameScreenManager.cs:29</a></div></div>
+<div class="ttc" id="aclass_internationalization_1_1_translator_html"><div class="ttname"><a href="class_internationalization_1_1_translator.html">Internationalization.Translator</a></div><div class="ttdoc">Adds an easily expandable localization system.</div><div class="ttdef"><b>Definition:</b> <a href="_translator_8cs_source.html#l00019">Translator.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_a28478285a462365dad79939067eb2941"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#a28478285a462365dad79939067eb2941">GameScene1.GameScreenManager.gameActive</a></div><div class="ttdeci">bool gameActive</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00026">GameScreenManager.cs:26</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_a4eb73a3611539fedead9d8057f34fdf1"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#a4eb73a3611539fedead9d8057f34fdf1">GameScene2.GameScreenManager2.scoreText</a></div><div class="ttdeci">TMP_Text scoreText</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00013">GameScreenManager2.cs:13</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_game_screen_manager_html_a991e64fb364aeab9e2e7a7dfd87a39d9"><div class="ttname"><a href="class_game_scene1_1_1_game_screen_manager.html#a991e64fb364aeab9e2e7a7dfd87a39d9">GameScene1.GameScreenManager.gameTilemapAdapter</a></div><div class="ttdeci">TilemapGameAdapter gameTilemapAdapter</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager_8cs_source.html#l00016">GameScreenManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_game_screen_manager2_html_aedd33a74c768e33bbeaad5c7b803d3e6"><div class="ttname"><a href="class_game_scene2_1_1_game_screen_manager2.html#aedd33a74c768e33bbeaad5c7b803d3e6">GameScene2.GameScreenManager2.loadSaveDataButton</a></div><div class="ttdeci">Button loadSaveDataButton</div><div class="ttdef"><b>Definition:</b> <a href="_game_screen_manager2_8cs_source.html#l00014">GameScreenManager2.cs:14</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

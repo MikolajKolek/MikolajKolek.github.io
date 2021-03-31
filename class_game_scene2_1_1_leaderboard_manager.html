@@ -29,7 +29,7 @@
    <div id="projectname">Sokoban
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Made by Mikołaj Kołek and Łukasz Prokop</div>
+   <div id="projectbrief">Made by Mikołaj Kołek, Łukasz Prokop and Witold Kędra</div>
   </td>
  </tr>
  </tbody>
@@ -93,16 +93,23 @@ $(document).ready(function(){initNavTree('class_game_scene2_1_1_leaderboard_mana
 <div class="title">GameScene2.LeaderboardManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The leaderboardManager manages everything going on in the leaderboard screen.  
+ <a href="class_game_scene2_1_1_leaderboard_manager.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ace5e55ae201d18137945f56f11be6462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#ace5e55ae201d18137945f56f11be6462">InitializeLeaderboard</a> ()</td></tr>
+<tr class="memdesc:ace5e55ae201d18137945f56f11be6462"><td class="mdescLeft">&#160;</td><td class="mdescRight">InitializeLeaderboard is called whenever the leaderboard screen is entered. It puts all the profiles from <a class="el" href="class_game_scene2_1_1_profile_manager.html" title="Manages the profiles for gameScene2.">ProfileManager</a> into the leaderboard and destroys any leaderboard entries that were left over from the previous time the leaderboard was shown.  <a href="class_game_scene2_1_1_leaderboard_manager.html#ace5e55ae201d18137945f56f11be6462">More...</a><br /></td></tr>
 <tr class="separator:ace5e55ae201d18137945f56f11be6462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e01b8366e25eea477631ac1c258c7e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#a8e01b8366e25eea477631ac1c258c7e0">ToggleValueChanged</a> ()</td></tr>
+<tr class="memdesc:a8e01b8366e25eea477631ac1c258c7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a toggle on the leaderboard is pressed. It allows the <a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">seeIndividualScoresButton</a> to be pressed.  <a href="class_game_scene2_1_1_leaderboard_manager.html#a8e01b8366e25eea477631ac1c258c7e0">More...</a><br /></td></tr>
 <tr class="separator:a8e01b8366e25eea477631ac1c258c7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefd40916c6b21d747ab5ff41ccdc1b7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#aefd40916c6b21d747ab5ff41ccdc1b7d">Exit</a> ()</td></tr>
+<tr class="memdesc:aefd40916c6b21d747ab5ff41ccdc1b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit is called whenever the exit button is pressed. It leaves the leaderboard screen and goes back to the level selection screen.  <a href="class_game_scene2_1_1_leaderboard_manager.html#aefd40916c6b21d747ab5ff41ccdc1b7d">More...</a><br /></td></tr>
 <tr class="separator:aefd40916c6b21d747ab5ff41ccdc1b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80c901d5e4b2c484e93fdb47de3086f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#a80c901d5e4b2c484e93fdb47de3086f3">SeeIndividualScores</a> ()</td></tr>
+<tr class="memdesc:a80c901d5e4b2c484e93fdb47de3086f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">SeeIndividualScores is called whenever the <a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">seeIndividualScoresButton</a> is pressed. It shows the <a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">individualScoresList</a> and initializes it with the scores from all levels in the game.  <a href="class_game_scene2_1_1_leaderboard_manager.html#a80c901d5e4b2c484e93fdb47de3086f3">More...</a><br /></td></tr>
 <tr class="separator:a80c901d5e4b2c484e93fdb47de3086f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -136,17 +143,15 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a5bf0f82baa70e99fc0e6461bf97dc0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00012">12</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<div class="textblock"><p>The leaderboardManager manages everything going on in the leaderboard screen. </p>
+
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00015">15</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aefd40916c6b21d747ab5ff41ccdc1b7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefd40916c6b21d747ab5ff41ccdc1b7d">&#9670;&nbsp;</a></span>Exit()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GameScene2.LeaderboardManager.Exit </td>
@@ -155,20 +160,17 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00060">60</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                           {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a5bf0f82baa70e99fc0e6461bf97dc0ec">leaderboardInitialized</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">PlayAudioEffect</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.ButtonClicked);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#aad0e16769758006a8eff686da9073d12">levelSelectionScreen</a>.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<p>Exit is called whenever the exit button is pressed. It leaves the leaderboard screen and goes back to the level selection screen. </p>
+
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00072">72</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                           {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a5bf0f82baa70e99fc0e6461bf97dc0ec">leaderboardInitialized</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">PlayAudioEffect</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.ButtonClicked);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#aad0e16769758006a8eff686da9073d12">levelSelectionScreen</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -177,9 +179,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GameScene2.LeaderboardManager.InitializeLeaderboard </td>
@@ -188,38 +187,35 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00027">27</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                            {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">foreach</span>(var entry <span class="keywordflow">in</span> <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a223d03298032ad9e9af6f6cf1e153d8a">leaderboardEntryList</a>)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                Destroy(entry.gameObject);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a223d03298032ad9e9af6f6cf1e153d8a">leaderboardEntryList</a> = <span class="keyword">new</span> List&lt;TMP_Text&gt;();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a9edc4bc91ac887b587d74aaa2d00c3a2">exampleLeaderboardEntry</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#aad0e16769758006a8eff686da9073d12">levelSelectionScreen</a>.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">PlayAudioEffect</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.ButtonClicked);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            var leaderboard = ProfileManager.GetProfileLeaderboard();</div>
+<p>InitializeLeaderboard is called whenever the leaderboard screen is entered. It puts all the profiles from <a class="el" href="class_game_scene2_1_1_profile_manager.html" title="Manages the profiles for gameScene2.">ProfileManager</a> into the leaderboard and destroys any leaderboard entries that were left over from the previous time the leaderboard was shown. </p>
+
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00033">33</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                            {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">foreach</span>(var entry <span class="keywordflow">in</span> <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a223d03298032ad9e9af6f6cf1e153d8a">leaderboardEntryList</a>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                Destroy(entry.gameObject);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a223d03298032ad9e9af6f6cf1e153d8a">leaderboardEntryList</a> = <span class="keyword">new</span> List&lt;TMP_Text&gt;();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a9edc4bc91ac887b587d74aaa2d00c3a2">exampleLeaderboardEntry</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">foreach</span> (var entry <span class="keywordflow">in</span> leaderboard) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                var button = Instantiate(<a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a9edc4bc91ac887b587d74aaa2d00c3a2">exampleLeaderboardEntry</a>, <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a27961ab8b2c6bd64b50d9bb824097b80">leaderboardScrollViewContent</a>.transform, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                button.text = entry.name + <span class="stringliteral">&quot; - &quot;</span> + <a class="code" href="class_internationalization_1_1_translator.html">Translator</a>.<a class="code" href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">GetTranslation</a>(<span class="stringliteral">&quot;gamescene.leaderboard.score.text&quot;</span>) + <span class="stringliteral">&quot; &quot;</span> + entry.score;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                button.name = entry.id.ToString();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a223d03298032ad9e9af6f6cf1e153d8a">leaderboardEntryList</a>.Add(button);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a5bf0f82baa70e99fc0e6461bf97dc0ec">leaderboardInitialized</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">seeIndividualScoresButton</a>.interactable = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a4f8f1289bc389dae5f62271202110c2a">seeIndividualScoresButtonText</a>.alpha = 0.5f;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a9edc4bc91ac887b587d74aaa2d00c3a2">exampleLeaderboardEntry</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#aad0e16769758006a8eff686da9073d12">levelSelectionScreen</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">PlayAudioEffect</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.ButtonClicked);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            var leaderboard = ProfileManager.GetProfileLeaderboard();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">foreach</span> (var entry <span class="keywordflow">in</span> leaderboard) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                var button = Instantiate(<a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a9edc4bc91ac887b587d74aaa2d00c3a2">exampleLeaderboardEntry</a>, <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a27961ab8b2c6bd64b50d9bb824097b80">leaderboardScrollViewContent</a>.transform, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                button.text = entry.name + <span class="stringliteral">&quot; - &quot;</span> + <a class="code" href="class_internationalization_1_1_translator.html">Translator</a>.<a class="code" href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">GetTranslation</a>(<span class="stringliteral">&quot;gamescene.leaderboard.score.text&quot;</span>) + <span class="stringliteral">&quot; &quot;</span> + entry.score;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                button.name = entry.id.ToString();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a223d03298032ad9e9af6f6cf1e153d8a">leaderboardEntryList</a>.Add(button);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a5bf0f82baa70e99fc0e6461bf97dc0ec">leaderboardInitialized</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">seeIndividualScoresButton</a>.interactable = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a4f8f1289bc389dae5f62271202110c2a">seeIndividualScoresButtonText</a>.alpha = 0.5f;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a9edc4bc91ac887b587d74aaa2d00c3a2">exampleLeaderboardEntry</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -228,9 +224,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GameScene2.LeaderboardManager.SeeIndividualScores </td>
@@ -239,37 +232,34 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00067">67</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                          {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">PlayAudioEffect</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.ButtonClicked);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">foreach</span> (var entry <span class="keywordflow">in</span> <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">individualScoresList</a>)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                Destroy(entry.gameObject);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">individualScoresList</a> = <span class="keyword">new</span> List&lt;TMP_Text&gt;();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45bf86fea221049a3a90f95ba595ee04">exampleScoreEntry</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a36f25068edd58bd65461e3e20eef0a45">individualScoresScreen</a>.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            var selectedProfile = ProfileManager.GetProfile(Convert.ToInt32(<a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45ff8f684fa55afaf4386263fc615aea">group</a>.ActiveToggles().First().transform.parent.name));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            var i = 0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">foreach</span> (var score <span class="keywordflow">in</span> selectedProfile.levelScore) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                var button = Instantiate(<a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45bf86fea221049a3a90f95ba595ee04">exampleScoreEntry</a>, <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#aeb05eaa4bb268333026827ce062ab70f">individualScoresScrollViewContent</a>.transform, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                button.text = <a class="code" href="class_internationalization_1_1_translator.html">Translator</a>.<a class="code" href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">GetTranslation</a>(<span class="stringliteral">&quot;gamescene.levelselection.level.text&quot;</span>) + <span class="stringliteral">&quot; &quot;</span> +  <a class="code" href="class_game_scene1_1_1_level_registry.html">LevelRegistry</a>.<a class="code" href="class_game_scene1_1_1_level_registry.html#a3ce8c73085bfa0f76e4273b1bac447bd">GetLevel</a>(i).<a class="code" href="struct_game_scene1_1_1_level.html#a935b14ca6bd672108afa9f3313f5cd95">levelName</a> + <span class="stringliteral">&quot; - &quot;</span> + score;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">individualScoresList</a>.Add(button);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                i++;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45bf86fea221049a3a90f95ba595ee04">exampleScoreEntry</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<p>SeeIndividualScores is called whenever the <a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">seeIndividualScoresButton</a> is pressed. It shows the <a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">individualScoresList</a> and initializes it with the scores from all levels in the game. </p>
+
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00083">83</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                          {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">Instance</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">PlayAudioEffect</a>(<a class="code" href="class_program_setup_1_1_audio_manager.html">AudioManager</a>.<a class="code" href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">AudioEffectClip</a>.ButtonClicked);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">foreach</span> (var entry <span class="keywordflow">in</span> <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">individualScoresList</a>)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                Destroy(entry.gameObject);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">individualScoresList</a> = <span class="keyword">new</span> List&lt;TMP_Text&gt;();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45bf86fea221049a3a90f95ba595ee04">exampleScoreEntry</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a36f25068edd58bd65461e3e20eef0a45">individualScoresScreen</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            var selectedProfile = ProfileManager.GetProfile(Convert.ToInt32(<a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45ff8f684fa55afaf4386263fc615aea">group</a>.ActiveToggles().First().transform.parent.name));</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            var i = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">foreach</span> (var score <span class="keywordflow">in</span> selectedProfile.levelScore) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                var button = Instantiate(<a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45bf86fea221049a3a90f95ba595ee04">exampleScoreEntry</a>, <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#aeb05eaa4bb268333026827ce062ab70f">individualScoresScrollViewContent</a>.transform, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                button.text = <a class="code" href="class_internationalization_1_1_translator.html">Translator</a>.<a class="code" href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">GetTranslation</a>(<span class="stringliteral">&quot;gamescene.levelselection.level.text&quot;</span>) + <span class="stringliteral">&quot; &quot;</span> +  <a class="code" href="class_game_scene1_1_1_level_registry.html">LevelRegistry</a>.<a class="code" href="class_game_scene1_1_1_level_registry.html#a3ce8c73085bfa0f76e4273b1bac447bd">GetLevel</a>(i).<a class="code" href="struct_game_scene1_1_1_level.html#a935b14ca6bd672108afa9f3313f5cd95">levelName</a> + <span class="stringliteral">&quot; - &quot;</span> + score;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">individualScoresList</a>.Add(button);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                i++;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45bf86fea221049a3a90f95ba595ee04">exampleScoreEntry</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -278,9 +268,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GameScene2.LeaderboardManager.ToggleValueChanged </td>
@@ -289,21 +276,18 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00052">52</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                         {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a5bf0f82baa70e99fc0e6461bf97dc0ec">leaderboardInitialized</a>) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45ff8f684fa55afaf4386263fc615aea">group</a>.allowSwitchOff = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">seeIndividualScoresButton</a>.interactable = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a4f8f1289bc389dae5f62271202110c2a">seeIndividualScoresButtonText</a>.alpha = 1f;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<p>Called whenever a toggle on the leaderboard is pressed. It allows the <a class="el" href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">seeIndividualScoresButton</a> to be pressed. </p>
+
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00061">61</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                         {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a5bf0f82baa70e99fc0e6461bf97dc0ec">leaderboardInitialized</a>) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a45ff8f684fa55afaf4386263fc615aea">group</a>.allowSwitchOff = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">seeIndividualScoresButton</a>.interactable = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="class_game_scene2_1_1_leaderboard_manager.html#a4f8f1289bc389dae5f62271202110c2a">seeIndividualScoresButtonText</a>.alpha = 1f;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -328,7 +312,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00013">13</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00016">16</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -352,7 +336,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00021">21</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00024">24</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -376,7 +360,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00018">18</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00021">21</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -392,7 +376,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00023">23</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00026">26</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -416,7 +400,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00019">19</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00022">22</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -440,7 +424,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00020">20</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00023">23</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -456,7 +440,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00024">24</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00027">27</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -480,7 +464,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00025">25</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00028">28</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -504,7 +488,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00014">14</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00017">17</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -528,7 +512,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00017">17</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00020">20</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -552,7 +536,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00015">15</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00018">18</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -576,7 +560,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00016">16</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_leaderboard_manager_8cs_source.html#l00019">19</a> of file <a class="el" href="_leaderboard_manager_8cs_source.html">LeaderboardManager.cs</a>.</p>
 
 </div>
 </div>
@@ -585,27 +569,27 @@ Private Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a9edc4bc91ac887b587d74aaa2d00c3a2"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a9edc4bc91ac887b587d74aaa2d00c3a2">GameScene2.LeaderboardManager.exampleLeaderboardEntry</a></div><div class="ttdeci">TMP_Text exampleLeaderboardEntry</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00013">LeaderboardManager.cs:13</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a2e189051bf1d192cbf0b90447a34d238"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">GameScene2.LeaderboardManager.seeIndividualScoresButton</a></div><div class="ttdeci">Button seeIndividualScoresButton</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00015">LeaderboardManager.cs:15</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a3b87f42c245e51cf32781e0a4d85501d"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">GameScene2.LeaderboardManager.individualScoresList</a></div><div class="ttdeci">List&lt; TMP_Text &gt; individualScoresList</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00023">LeaderboardManager.cs:23</a></div></div>
-<div class="ttc" id="astruct_game_scene1_1_1_level_html_a935b14ca6bd672108afa9f3313f5cd95"><div class="ttname"><a href="struct_game_scene1_1_1_level.html#a935b14ca6bd672108afa9f3313f5cd95">GameScene1.Level.levelName</a></div><div class="ttdeci">string levelName</div><div class="ttdef"><b>Definition:</b> <a href="_level_8cs_source.html#l00010">Level.cs:10</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_level_registry_html"><div class="ttname"><a href="class_game_scene1_1_1_level_registry.html">GameScene1.LevelRegistry</a></div><div class="ttdef"><b>Definition:</b> <a href="_level_registry_8cs_source.html#l00007">LevelRegistry.cs:7</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_level_registry_html_a3ce8c73085bfa0f76e4273b1bac447bd"><div class="ttname"><a href="class_game_scene1_1_1_level_registry.html#a3ce8c73085bfa0f76e4273b1bac447bd">GameScene1.LevelRegistry.GetLevel</a></div><div class="ttdeci">static Level GetLevel(int levelRegistryId)</div><div class="ttdef"><b>Definition:</b> <a href="_level_registry_8cs_source.html#l00093">LevelRegistry.cs:93</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html">ProgramSetup.AudioManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00009">AudioManager.cs:9</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a36f25068edd58bd65461e3e20eef0a45"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a36f25068edd58bd65461e3e20eef0a45">GameScene2.LeaderboardManager.individualScoresScreen</a></div><div class="ttdeci">GameObject individualScoresScreen</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00019">LeaderboardManager.cs:19</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a45bf86fea221049a3a90f95ba595ee04"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a45bf86fea221049a3a90f95ba595ee04">GameScene2.LeaderboardManager.exampleScoreEntry</a></div><div class="ttdeci">TMP_Text exampleScoreEntry</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00021">LeaderboardManager.cs:21</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aa7c6651ab028152431142ddc71900f3b"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">ProgramSetup.AudioManager.PlayAudioEffect</a></div><div class="ttdeci">void PlayAudioEffect(AudioEffectClip clip)</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00222">AudioManager.cs:222</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_aad0e16769758006a8eff686da9073d12"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#aad0e16769758006a8eff686da9073d12">GameScene2.LeaderboardManager.levelSelectionScreen</a></div><div class="ttdeci">GameObject levelSelectionScreen</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00017">LeaderboardManager.cs:17</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_aeb05eaa4bb268333026827ce062ab70f"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#aeb05eaa4bb268333026827ce062ab70f">GameScene2.LeaderboardManager.individualScoresScrollViewContent</a></div><div class="ttdeci">GameObject individualScoresScrollViewContent</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00020">LeaderboardManager.cs:20</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a223d03298032ad9e9af6f6cf1e153d8a"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a223d03298032ad9e9af6f6cf1e153d8a">GameScene2.LeaderboardManager.leaderboardEntryList</a></div><div class="ttdeci">List&lt; TMP_Text &gt; leaderboardEntryList</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00024">LeaderboardManager.cs:24</a></div></div>
-<div class="ttc" id="aclass_internationalization_1_1_translator_html_a99be1edbc73d9c527f777c527811ddee"><div class="ttname"><a href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">Internationalization.Translator.GetTranslation</a></div><div class="ttdeci">static string GetTranslation(string key)</div><div class="ttdoc">Returns the translation of the provided key to the language selected in Translator....</div><div class="ttdef"><b>Definition:</b> <a href="_translator_8cs_source.html#l00095">Translator.cs:95</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a5bf0f82baa70e99fc0e6461bf97dc0ec"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a5bf0f82baa70e99fc0e6461bf97dc0ec">GameScene2.LeaderboardManager.leaderboardInitialized</a></div><div class="ttdeci">bool leaderboardInitialized</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00025">LeaderboardManager.cs:25</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a9a9dd2aa44274b90725f64ef08c67ac8"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">ProgramSetup.AudioManager.AudioEffectClip</a></div><div class="ttdeci">AudioEffectClip</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00058">AudioManager.cs:58</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a4f8f1289bc389dae5f62271202110c2a"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a4f8f1289bc389dae5f62271202110c2a">GameScene2.LeaderboardManager.seeIndividualScoresButtonText</a></div><div class="ttdeci">TMP_Text seeIndividualScoresButtonText</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00016">LeaderboardManager.cs:16</a></div></div>
-<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aca2f0503bb079e0a289d0c6e698c6c93"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">ProgramSetup.AudioManager.Instance</a></div><div class="ttdeci">static AudioManager Instance</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00038">AudioManager.cs:38</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a45ff8f684fa55afaf4386263fc615aea"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a45ff8f684fa55afaf4386263fc615aea">GameScene2.LeaderboardManager.group</a></div><div class="ttdeci">ToggleGroup group</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00018">LeaderboardManager.cs:18</a></div></div>
-<div class="ttc" id="aclass_internationalization_1_1_translator_html"><div class="ttname"><a href="class_internationalization_1_1_translator.html">Internationalization.Translator</a></div><div class="ttdoc">Adds an easily expandable localization system.</div><div class="ttdef"><b>Definition:</b> <a href="_translator_8cs_source.html#l00016">Translator.cs:16</a></div></div>
-<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a27961ab8b2c6bd64b50d9bb824097b80"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a27961ab8b2c6bd64b50d9bb824097b80">GameScene2.LeaderboardManager.leaderboardScrollViewContent</a></div><div class="ttdeci">GameObject leaderboardScrollViewContent</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00014">LeaderboardManager.cs:14</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a9edc4bc91ac887b587d74aaa2d00c3a2"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a9edc4bc91ac887b587d74aaa2d00c3a2">GameScene2.LeaderboardManager.exampleLeaderboardEntry</a></div><div class="ttdeci">TMP_Text exampleLeaderboardEntry</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00016">LeaderboardManager.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a2e189051bf1d192cbf0b90447a34d238"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a2e189051bf1d192cbf0b90447a34d238">GameScene2.LeaderboardManager.seeIndividualScoresButton</a></div><div class="ttdeci">Button seeIndividualScoresButton</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00018">LeaderboardManager.cs:18</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a3b87f42c245e51cf32781e0a4d85501d"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a3b87f42c245e51cf32781e0a4d85501d">GameScene2.LeaderboardManager.individualScoresList</a></div><div class="ttdeci">List&lt; TMP_Text &gt; individualScoresList</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00026">LeaderboardManager.cs:26</a></div></div>
+<div class="ttc" id="astruct_game_scene1_1_1_level_html_a935b14ca6bd672108afa9f3313f5cd95"><div class="ttname"><a href="struct_game_scene1_1_1_level.html#a935b14ca6bd672108afa9f3313f5cd95">GameScene1.Level.levelName</a></div><div class="ttdeci">string levelName</div><div class="ttdef"><b>Definition:</b> <a href="_level_8cs_source.html#l00016">Level.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_level_registry_html"><div class="ttname"><a href="class_game_scene1_1_1_level_registry.html">GameScene1.LevelRegistry</a></div><div class="ttdoc">The LevelRegistry is used to store and manage all levels in stage 1 and stage 2.</div><div class="ttdef"><b>Definition:</b> <a href="_level_registry_8cs_source.html#l00010">LevelRegistry.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_level_registry_html_a3ce8c73085bfa0f76e4273b1bac447bd"><div class="ttname"><a href="class_game_scene1_1_1_level_registry.html#a3ce8c73085bfa0f76e4273b1bac447bd">GameScene1.LevelRegistry.GetLevel</a></div><div class="ttdeci">static Level GetLevel(int levelRegistryId)</div><div class="ttdoc">Returns the Level with the passed registryID.</div><div class="ttdef"><b>Definition:</b> <a href="_level_registry_8cs_source.html#l00107">LevelRegistry.cs:107</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html">ProgramSetup.AudioManager</a></div><div class="ttdoc">The AudioManager is a singleton that is responsible for playing audio effects and music in the game.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00011">AudioManager.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a36f25068edd58bd65461e3e20eef0a45"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a36f25068edd58bd65461e3e20eef0a45">GameScene2.LeaderboardManager.individualScoresScreen</a></div><div class="ttdeci">GameObject individualScoresScreen</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00022">LeaderboardManager.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a45bf86fea221049a3a90f95ba595ee04"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a45bf86fea221049a3a90f95ba595ee04">GameScene2.LeaderboardManager.exampleScoreEntry</a></div><div class="ttdeci">TMP_Text exampleScoreEntry</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00024">LeaderboardManager.cs:24</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aa7c6651ab028152431142ddc71900f3b"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aa7c6651ab028152431142ddc71900f3b">ProgramSetup.AudioManager.PlayAudioEffect</a></div><div class="ttdeci">void PlayAudioEffect(AudioEffectClip clip)</div><div class="ttdoc">Plays the given AudioEffectClip while smoothly transitioning away from the previous clip if one was a...</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00237">AudioManager.cs:237</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_aad0e16769758006a8eff686da9073d12"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#aad0e16769758006a8eff686da9073d12">GameScene2.LeaderboardManager.levelSelectionScreen</a></div><div class="ttdeci">GameObject levelSelectionScreen</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00020">LeaderboardManager.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_aeb05eaa4bb268333026827ce062ab70f"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#aeb05eaa4bb268333026827ce062ab70f">GameScene2.LeaderboardManager.individualScoresScrollViewContent</a></div><div class="ttdeci">GameObject individualScoresScrollViewContent</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00023">LeaderboardManager.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a223d03298032ad9e9af6f6cf1e153d8a"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a223d03298032ad9e9af6f6cf1e153d8a">GameScene2.LeaderboardManager.leaderboardEntryList</a></div><div class="ttdeci">List&lt; TMP_Text &gt; leaderboardEntryList</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00027">LeaderboardManager.cs:27</a></div></div>
+<div class="ttc" id="aclass_internationalization_1_1_translator_html_a99be1edbc73d9c527f777c527811ddee"><div class="ttname"><a href="class_internationalization_1_1_translator.html#a99be1edbc73d9c527f777c527811ddee">Internationalization.Translator.GetTranslation</a></div><div class="ttdeci">static string GetTranslation(string key)</div><div class="ttdoc">Returns the translation of the provided key to the language selected in Translator....</div><div class="ttdef"><b>Definition:</b> <a href="_translator_8cs_source.html#l00098">Translator.cs:98</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a5bf0f82baa70e99fc0e6461bf97dc0ec"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a5bf0f82baa70e99fc0e6461bf97dc0ec">GameScene2.LeaderboardManager.leaderboardInitialized</a></div><div class="ttdeci">bool leaderboardInitialized</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00028">LeaderboardManager.cs:28</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_a9a9dd2aa44274b90725f64ef08c67ac8"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#a9a9dd2aa44274b90725f64ef08c67ac8">ProgramSetup.AudioManager.AudioEffectClip</a></div><div class="ttdeci">AudioEffectClip</div><div class="ttdoc">An enum that stores all audio effect clips in the game.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00074">AudioManager.cs:74</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a4f8f1289bc389dae5f62271202110c2a"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a4f8f1289bc389dae5f62271202110c2a">GameScene2.LeaderboardManager.seeIndividualScoresButtonText</a></div><div class="ttdeci">TMP_Text seeIndividualScoresButtonText</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00019">LeaderboardManager.cs:19</a></div></div>
+<div class="ttc" id="aclass_program_setup_1_1_audio_manager_html_aca2f0503bb079e0a289d0c6e698c6c93"><div class="ttname"><a href="class_program_setup_1_1_audio_manager.html#aca2f0503bb079e0a289d0c6e698c6c93">ProgramSetup.AudioManager.Instance</a></div><div class="ttdeci">static AudioManager Instance</div><div class="ttdoc">Used to store the single instance of the AudioManager singleton.</div><div class="ttdef"><b>Definition:</b> <a href="_audio_manager_8cs_source.html#l00087">AudioManager.cs:87</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a45ff8f684fa55afaf4386263fc615aea"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a45ff8f684fa55afaf4386263fc615aea">GameScene2.LeaderboardManager.group</a></div><div class="ttdeci">ToggleGroup group</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00021">LeaderboardManager.cs:21</a></div></div>
+<div class="ttc" id="aclass_internationalization_1_1_translator_html"><div class="ttname"><a href="class_internationalization_1_1_translator.html">Internationalization.Translator</a></div><div class="ttdoc">Adds an easily expandable localization system.</div><div class="ttdef"><b>Definition:</b> <a href="_translator_8cs_source.html#l00019">Translator.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_scene2_1_1_leaderboard_manager_html_a27961ab8b2c6bd64b50d9bb824097b80"><div class="ttname"><a href="class_game_scene2_1_1_leaderboard_manager.html#a27961ab8b2c6bd64b50d9bb824097b80">GameScene2.LeaderboardManager.leaderboardScrollViewContent</a></div><div class="ttdeci">GameObject leaderboardScrollViewContent</div><div class="ttdef"><b>Definition:</b> <a href="_leaderboard_manager_8cs_source.html#l00017">LeaderboardManager.cs:17</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

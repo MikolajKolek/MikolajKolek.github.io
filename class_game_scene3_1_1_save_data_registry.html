@@ -29,7 +29,7 @@
    <div id="projectname">Sokoban
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Made by Mikołaj Kołek and Łukasz Prokop</div>
+   <div id="projectbrief">Made by Mikołaj Kołek, Łukasz Prokop and Witold Kędra</div>
   </td>
  </tr>
  </tbody>
@@ -93,35 +93,47 @@ $(document).ready(function(){initNavTree('class_game_scene3_1_1_save_data_regist
 <div class="title">GameScene3.SaveDataRegistry Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages the save data for gameScene3.  
+ <a href="class_game_scene3_1_1_save_data_registry.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a24289500563c44ab550eeb0f8f0ae993"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_save_data_registry.html#a24289500563c44ab550eeb0f8f0ae993">InitializeRegistry</a> ()</td></tr>
+<tr class="memdesc:a24289500563c44ab550eeb0f8f0ae993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a> by loading all the saves from AppData%\Sokoban\saves into it and then sorts the saves by date created.  <a href="class_game_scene3_1_1_save_data_registry.html#a24289500563c44ab550eeb0f8f0ae993">More...</a><br /></td></tr>
 <tr class="separator:a24289500563c44ab550eeb0f8f0ae993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55dd3f156ad454f6e14059188e97a2cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_save_data_registry.html#a55dd3f156ad454f6e14059188e97a2cb">AddSaveData</a> (<a class="el" href="class_game_scene3_1_1_save_data2.html">SaveData2</a> saveData)</td></tr>
+<tr class="memdesc:a55dd3f156ad454f6e14059188e97a2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> to the <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a>.  <a href="class_game_scene3_1_1_save_data_registry.html#a55dd3f156ad454f6e14059188e97a2cb">More...</a><br /></td></tr>
 <tr class="separator:a55dd3f156ad454f6e14059188e97a2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8fe84b9bb3b68fff18f259e96022b38"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_game_scene3_1_1_save_data2.html">SaveData2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_save_data_registry.html#ad8fe84b9bb3b68fff18f259e96022b38">GetSaveData</a> (int saveDataID)</td></tr>
+<tr class="memdesc:ad8fe84b9bb3b68fff18f259e96022b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the save data at the given ID.  <a href="class_game_scene3_1_1_save_data_registry.html#ad8fe84b9bb3b68fff18f259e96022b38">More...</a><br /></td></tr>
 <tr class="separator:ad8fe84b9bb3b68fff18f259e96022b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26adac8386e0c194a9eb5f11735ed260"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_save_data_registry.html#a26adac8386e0c194a9eb5f11735ed260">GetSaveDataCount</a> ()</td></tr>
+<tr class="memdesc:a26adac8386e0c194a9eb5f11735ed260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the save data count  <a href="class_game_scene3_1_1_save_data_registry.html#a26adac8386e0c194a9eb5f11735ed260">More...</a><br /></td></tr>
 <tr class="separator:a26adac8386e0c194a9eb5f11735ed260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af347f7d0eb5f087404af7037a376d08e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_save_data_registry.html#af347f7d0eb5f087404af7037a376d08e">SaveGameExists</a> (string saveGameName)</td></tr>
+<tr class="memdesc:af347f7d0eb5f087404af7037a376d08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> with the given name exists in the <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a>  <a href="class_game_scene3_1_1_save_data_registry.html#af347f7d0eb5f087404af7037a376d08e">More...</a><br /></td></tr>
 <tr class="separator:af347f7d0eb5f087404af7037a376d08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59726e10623be508a38c80ae067822c6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_save_data_registry.html#a59726e10623be508a38c80ae067822c6">DeleteSaveData</a> (int saveDataID)</td></tr>
+<tr class="memdesc:a59726e10623be508a38c80ae067822c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> at the given ID.  <a href="class_game_scene3_1_1_save_data_registry.html#a59726e10623be508a38c80ae067822c6">More...</a><br /></td></tr>
 <tr class="separator:a59726e10623be508a38c80ae067822c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a1513a0fd44a0012d8535db41b389ca6e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_save_data_registry.html#a1513a0fd44a0012d8535db41b389ca6e">SaveSaveData</a> (int saveDataID)</td></tr>
+<tr class="memdesc:a1513a0fd44a0012d8535db41b389ca6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the save data at the given ID into a file.  <a href="class_game_scene3_1_1_save_data_registry.html#a1513a0fd44a0012d8535db41b389ca6e">More...</a><br /></td></tr>
 <tr class="separator:a1513a0fd44a0012d8535db41b389ca6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ac46d4e920c42cc255b96123a25be192f"><td class="memItemLeft" align="right" valign="top">static readonly List&lt; <a class="el" href="class_game_scene3_1_1_save_data2.html">SaveData2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a> = new List&lt;<a class="el" href="class_game_scene3_1_1_save_data2.html">SaveData2</a>&gt;()</td></tr>
+<tr class="memdesc:ac46d4e920c42cc255b96123a25be192f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The List&lt;T&gt; that stores all the <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a>s.  <a href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">More...</a><br /></td></tr>
 <tr class="separator:ac46d4e920c42cc255b96123a25be192f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00008">8</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
+<div class="textblock"><p>Manages the save data for gameScene3. </p>
+
+<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00011">11</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a55dd3f156ad454f6e14059188e97a2cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55dd3f156ad454f6e14059188e97a2cb">&#9670;&nbsp;</a></span>AddSaveData()</h2>
@@ -142,16 +154,24 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00031">31</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                           {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Add(saveData);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#a1513a0fd44a0012d8535db41b389ca6e">SaveSaveData</a>(<a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Count - 1);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<p>Adds a new <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> to the <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveData</td><td>The <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> that you want to add to the registry.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00044">44</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                           {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Add(saveData);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#a1513a0fd44a0012d8535db41b389ca6e">SaveSaveData</a>(<a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Count - 1);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -174,21 +194,29 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00065">65</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                          {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            var directory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + <span class="stringliteral">@&quot;\Sokoban&quot;</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            var path = directory + <span class="stringliteral">@&quot;\saves\&quot;</span> + <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>[saveDataID].saveDataName + <span class="stringliteral">&quot;.json&quot;</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            File.Delete(path);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.RemoveAt(saveDataID);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Sort();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<p>Deletes the <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> at the given ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveDataID</td><td>The index in <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a> of the <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> that you want to delete.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00099">99</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                          {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            var directory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + <span class="stringliteral">@&quot;\Sokoban&quot;</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            var path = directory + <span class="stringliteral">@&quot;\saves\&quot;</span> + <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>[saveDataID].saveDataName + <span class="stringliteral">&quot;.json&quot;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            File.Delete(path);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.RemoveAt(saveDataID);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Sort();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -211,15 +239,24 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00047">47</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                            {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>[saveDataID];</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<p>Gets the save data at the given ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveDataID</td><td>The ID of the save data that you want to get in the <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The requested <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a>.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00069">69</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                            {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>[saveDataID];</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -241,15 +278,17 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00051">51</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                             {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Count;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<p>Returns the save data count </p>
+
+<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00076">76</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                             {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Count;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -271,28 +310,30 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00014">14</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                                {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            var directory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + <span class="stringliteral">@&quot;\Sokoban\saves&quot;</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">if</span> (Directory.Exists(directory)) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                var files = Directory.GetFiles(directory, <span class="stringliteral">&quot;*.json&quot;</span>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="keywordflow">foreach</span> (var file <span class="keywordflow">in</span> files) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                    var json = File.ReadAllText(file);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                    var loadedSaveData = JsonUtility.FromJson&lt;SaveData2&gt;(json);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Add(loadedSaveData);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                Directory.CreateDirectory(directory);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Sort();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<p>Initializes the <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a> by loading all the saves from AppData%\Sokoban\saves into it and then sorts the saves by date created. </p>
+
+<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00023">23</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                                {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            var directory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + <span class="stringliteral">@&quot;\Sokoban\saves&quot;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (Directory.Exists(directory)) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                var files = Directory.GetFiles(directory, <span class="stringliteral">&quot;*.json&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">foreach</span> (var file <span class="keywordflow">in</span> files) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    var json = File.ReadAllText(file);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    var loadedSaveData = JsonUtility.FromJson&lt;SaveData2&gt;(json);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Add(loadedSaveData);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                Directory.CreateDirectory(directory);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>.Sort();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -315,21 +356,30 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00055">55</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                               {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            var directory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + <span class="stringliteral">@&quot;\Sokoban&quot;</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            var path = directory + <span class="stringliteral">@&quot;\saves\&quot;</span> + saveGameName + <span class="stringliteral">&quot;.json&quot;</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span> (File.Exists(path))</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<p>Checks if a <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> with the given name exists in the <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveGameName</td><td>The name that is being checked in the <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> by that name exists, false if it doesn't.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00085">85</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                               {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            var directory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + <span class="stringliteral">@&quot;\Sokoban&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            var path = directory + <span class="stringliteral">@&quot;\saves\&quot;</span> + saveGameName + <span class="stringliteral">&quot;.json&quot;</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span> (File.Exists(path))</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -352,22 +402,30 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00036">36</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                         {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            var directory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + <span class="stringliteral">@&quot;\Sokoban&quot;</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            var path = directory + <span class="stringliteral">@&quot;\saves\&quot;</span> + <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>[saveDataID].saveDataName + <span class="stringliteral">&quot;.json&quot;</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            var json = JsonUtility.ToJson(<a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>[saveDataID]);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            var fs = File.Create(path);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            var bytes = Encoding.UTF8.GetBytes(json);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            fs.Write(bytes, 0, bytes.Length);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            fs.Close();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<p>Saves the save data at the given ID into a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveDataID</td><td>The index in the <a class="el" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f" title="The List&lt;T&gt; that stores all the SaveData2s.">Registry</a> of the <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a> that will be saved.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00053">53</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                         {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            var directory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + <span class="stringliteral">@&quot;\Sokoban&quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            var path = directory + <span class="stringliteral">@&quot;\saves\&quot;</span> + <a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>[saveDataID].saveDataName + <span class="stringliteral">&quot;.json&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            var json = JsonUtility.ToJson(<a class="code" href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">Registry</a>[saveDataID]);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            var fs = File.Create(path);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            var bytes = Encoding.UTF8.GetBytes(json);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            fs.Write(bytes, 0, bytes.Length);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            fs.Close();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -392,7 +450,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00010">10</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
+<p>The List&lt;T&gt; that stores all the <a class="el" href="class_game_scene3_1_1_save_data2.html" title="Stores all the data required to restore a savestate in stage 3.">SaveData2</a>s. </p>
+
+<p class="definition">Definition at line <a class="el" href="_save_data_registry_8cs_source.html#l00016">16</a> of file <a class="el" href="_save_data_registry_8cs_source.html">SaveDataRegistry.cs</a>.</p>
 
 </div>
 </div>
@@ -401,8 +461,8 @@ Static Private Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_game_scene3_1_1_save_data_registry_html_ac46d4e920c42cc255b96123a25be192f"><div class="ttname"><a href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">GameScene3.SaveDataRegistry.Registry</a></div><div class="ttdeci">static readonly List&lt; SaveData2 &gt; Registry</div><div class="ttdef"><b>Definition:</b> <a href="_save_data_registry_8cs_source.html#l00010">SaveDataRegistry.cs:10</a></div></div>
-<div class="ttc" id="aclass_game_scene3_1_1_save_data_registry_html_a1513a0fd44a0012d8535db41b389ca6e"><div class="ttname"><a href="class_game_scene3_1_1_save_data_registry.html#a1513a0fd44a0012d8535db41b389ca6e">GameScene3.SaveDataRegistry.SaveSaveData</a></div><div class="ttdeci">static void SaveSaveData(int saveDataID)</div><div class="ttdef"><b>Definition:</b> <a href="_save_data_registry_8cs_source.html#l00036">SaveDataRegistry.cs:36</a></div></div>
+<div class="ttc" id="aclass_game_scene3_1_1_save_data_registry_html_ac46d4e920c42cc255b96123a25be192f"><div class="ttname"><a href="class_game_scene3_1_1_save_data_registry.html#ac46d4e920c42cc255b96123a25be192f">GameScene3.SaveDataRegistry.Registry</a></div><div class="ttdeci">static readonly List&lt; SaveData2 &gt; Registry</div><div class="ttdoc">The List&lt;T&gt; that stores all the SaveData2s.</div><div class="ttdef"><b>Definition:</b> <a href="_save_data_registry_8cs_source.html#l00016">SaveDataRegistry.cs:16</a></div></div>
+<div class="ttc" id="aclass_game_scene3_1_1_save_data_registry_html_a1513a0fd44a0012d8535db41b389ca6e"><div class="ttname"><a href="class_game_scene3_1_1_save_data_registry.html#a1513a0fd44a0012d8535db41b389ca6e">GameScene3.SaveDataRegistry.SaveSaveData</a></div><div class="ttdeci">static void SaveSaveData(int saveDataID)</div><div class="ttdoc">Saves the save data at the given ID into a file.</div><div class="ttdef"><b>Definition:</b> <a href="_save_data_registry_8cs_source.html#l00053">SaveDataRegistry.cs:53</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -29,7 +29,7 @@
    <div id="projectname">Sokoban
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">Made by Mikołaj Kołek and Łukasz Prokop</div>
+   <div id="projectbrief">Made by Mikołaj Kołek, Łukasz Prokop and Witold Kędra</div>
   </td>
  </tr>
  </tbody>
@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('class_game_scene3_1_1_editor_tilemap_g
 <div class="title">GameScene3.EditorTilemapGameAdapter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Inherits from TilemapGameAdapter and modifies it so it can be used for level creation.  
+ <a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -100,16 +103,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae541b1118b6ccbf8fc0c88c82bfa6bf8"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#ae541b1118b6ccbf8fc0c88c82bfa6bf8">PlayerRemovedEvent</a> ()</td></tr>
 <tr class="separator:ae541b1118b6ccbf8fc0c88c82bfa6bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c068b7a13bbf91be82e044ea4c57dbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a1c068b7a13bbf91be82e044ea4c57dbb">SetTile</a> (Vector3Int position, <a class="el" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Level.Tile</a> tile)</td></tr>
+<tr class="memdesc:a1c068b7a13bbf91be82e044ea4c57dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the tile at the given location to the given tile.  <a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a1c068b7a13bbf91be82e044ea4c57dbb">More...</a><br /></td></tr>
 <tr class="separator:a1c068b7a13bbf91be82e044ea4c57dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74ce1850c3d28648d4509336a0b1536b"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a74ce1850c3d28648d4509336a0b1536b">GetBaseCoordinates</a> ()</td></tr>
+<tr class="memdesc:a74ce1850c3d28648d4509336a0b1536b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the baseXCoordinate and baseYCoordinate and returns them  <a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a74ce1850c3d28648d4509336a0b1536b">More...</a><br /></td></tr>
 <tr class="separator:a74ce1850c3d28648d4509336a0b1536b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1647520ed023687a0f743df577cb55c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#ab1647520ed023687a0f743df577cb55c">GetTileSideLength</a> ()</td></tr>
+<tr class="memdesc:ab1647520ed023687a0f743df577cb55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current length of a tile's side.  <a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#ab1647520ed023687a0f743df577cb55c">More...</a><br /></td></tr>
 <tr class="separator:ab1647520ed023687a0f743df577cb55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cf0bef99f159f65c418248de02dc2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a49cf0bef99f159f65c418248de02dc2b">ExportLevel</a> (string levelName, int levelHeight, int levelWidth)</td></tr>
+<tr class="memdesc:a49cf0bef99f159f65c418248de02dc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the level and puts it into levelRegistry2.  <a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a49cf0bef99f159f65c418248de02dc2b">More...</a><br /></td></tr>
 <tr class="separator:a49cf0bef99f159f65c418248de02dc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe4c667f6615e9b14a4df5e853f5c1ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_game_scene1_1_1_level.html">Level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#abe4c667f6615e9b14a4df5e853f5c1ee">GetLevel</a> (int levelHeight, int levelWidth)</td></tr>
+<tr class="memdesc:abe4c667f6615e9b14a4df5e853f5c1ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the level that is currently being created in the editor.  <a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#abe4c667f6615e9b14a4df5e853f5c1ee">More...</a><br /></td></tr>
 <tr class="separator:abe4c667f6615e9b14a4df5e853f5c1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b7298c9e291edd61406b4409ba392da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a5b7298c9e291edd61406b4409ba392da">ClearAllTiles</a> ()</td></tr>
+<tr class="memdesc:a5b7298c9e291edd61406b4409ba392da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all tiles on the tilemap.  <a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a5b7298c9e291edd61406b4409ba392da">More...</a><br /></td></tr>
 <tr class="separator:a5b7298c9e291edd61406b4409ba392da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_game_scene1_1_1_tilemap_game_adapter')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html">GameScene1.TilemapGameAdapter</a></td></tr>
 <tr class="memitem:a34e68e76bb96563d546f8b3b777404a8 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a34e68e76bb96563d546f8b3b777404a8">LevelFinishEvent</a> ()</td></tr>
@@ -120,25 +129,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acdd55cd63e82ff71b291a68042f6750c inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d56762dbbee42ca6cb546fb4b28ac61 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a7d56762dbbee42ca6cb546fb4b28ac61">TimePassedEvent</a> (int time)</td></tr>
 <tr class="separator:a7d56762dbbee42ca6cb546fb4b28ac61 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd09955c2b82d3366a7116be26a36ef inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#aebd09955c2b82d3366a7116be26a36ef">RewindLastMove</a> ()</td></tr>
-<tr class="separator:aebd09955c2b82d3366a7116be26a36ef inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a281e0ea6cf74272b606f6b1c1591b5e9 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a281e0ea6cf74272b606f6b1c1591b5e9">Update</a> ()</td></tr>
+<tr class="memdesc:a281e0ea6cf74272b606f6b1c1591b5e9 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Update function runs every frame and keeps the timer running. When it passes a full second, it calls <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a891158f6d673154009ebbc5a28b07e23" title="This event is called every time a full second passes from the loading of the level.">onTimePassed</a>.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a281e0ea6cf74272b606f6b1c1591b5e9">More...</a><br /></td></tr>
 <tr class="separator:a281e0ea6cf74272b606f6b1c1591b5e9 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5d292641460d441d0056d9c0f6518aa inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#ac5d292641460d441d0056d9c0f6518aa">RestartTimer</a> ()</td></tr>
+<tr class="memdesc:ac5d292641460d441d0056d9c0f6518aa inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restarts the in-game timer.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#ac5d292641460d441d0056d9c0f6518aa">More...</a><br /></td></tr>
 <tr class="separator:ac5d292641460d441d0056d9c0f6518aa inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1b55c8e888799315bbcce8b7ca27bc1 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab1b55c8e888799315bbcce8b7ca27bc1">MovePlayer</a> (Vector3Int direction)</td></tr>
+<tr class="memdesc:ab1b55c8e888799315bbcce8b7ca27bc1 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the player in the given direction if it is possible.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#ab1b55c8e888799315bbcce8b7ca27bc1">More...</a><br /></td></tr>
 <tr class="separator:ab1b55c8e888799315bbcce8b7ca27bc1 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c3c39dbc54bb2f286875dfcce503cc inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#ad5c3c39dbc54bb2f286875dfcce503cc">WindowScaleUpdate</a> ()</td></tr>
+<tr class="memdesc:ad5c3c39dbc54bb2f286875dfcce503cc inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">The version of <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#ad5c3c39dbc54bb2f286875dfcce503cc">WindowScaleUpdate()</a> that doesn't require any parameters because it uses the level height and level width from <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a0b68fdd3838d156261016c1af76e0191">currentLevel</a>.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#ad5c3c39dbc54bb2f286875dfcce503cc">More...</a><br /></td></tr>
 <tr class="separator:ad5c3c39dbc54bb2f286875dfcce503cc inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10d5eaa21c7df5c7db78036bfc923c21 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a10d5eaa21c7df5c7db78036bfc923c21">WindowScaleUpdate</a> (int levelHeight, int levelWidth)</td></tr>
+<tr class="memdesc:a10d5eaa21c7df5c7db78036bfc923c21 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">WindowScaleUpdate updates the scale of the grid and the Tilemap's tileAnchor to fit perfectly on the screen in accordance with <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab59c128ab626c308b0b5379749c125f1" title="The horizontalTilemapSpan float tells the TilemapGameAdapter how much screen it can take up (if it&#39;s ...">horizontalTilemapSpan</a>, <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#ae40c5278ec0d4d3275cee1d1d6de5def" title="The margin in pixels that is kept from the horizontal edges of the Tilemap as set by horizontalTilema...">horizontalMargin</a> and <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#af7c8f5047ad215e20b1c58cfa69caf5c" title="The margin in pixels that is kept from the top and bottom of the screen.">verticalMargin</a>.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a10d5eaa21c7df5c7db78036bfc923c21">More...</a><br /></td></tr>
 <tr class="separator:a10d5eaa21c7df5c7db78036bfc923c21 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ed27a9174a0d45e96832278a7051026 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a9ed27a9174a0d45e96832278a7051026">UpdateLevelSize</a> (int levelHeight, int levelWidth)</td></tr>
+<tr class="memdesc:a9ed27a9174a0d45e96832278a7051026 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called each time a level size updates. It sets the value of the horizontalMultiplier and then calls <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#ad5c3c39dbc54bb2f286875dfcce503cc" title="The version of WindowScaleUpdate() that doesn&#39;t require any parameters because it uses the level heig...">WindowScaleUpdate()</a>.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a9ed27a9174a0d45e96832278a7051026">More...</a><br /></td></tr>
 <tr class="separator:a9ed27a9174a0d45e96832278a7051026 inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59799891f9c7ba63c2867948013ea33a inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a59799891f9c7ba63c2867948013ea33a">LoadLevel</a> (<a class="el" href="struct_game_scene1_1_1_level.html">Level</a> level)</td></tr>
+<tr class="memdesc:a59799891f9c7ba63c2867948013ea33a inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the level it is provided as a parameter and starts playing appropriate music if <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a32227cb5ffd2b7e6dc1fdceb7f02b01c" title="This serialized bool tells the TilemapGameAdapter if it should play music after it loads a level.">playMusic</a> is true.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a59799891f9c7ba63c2867948013ea33a">More...</a><br /></td></tr>
 <tr class="separator:a59799891f9c7ba63c2867948013ea33a inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e39c13b09260ce2fb786dd855c709c inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a98e39c13b09260ce2fb786dd855c709c">LoadLevel</a> (int levelRegistryId)</td></tr>
+<tr class="memdesc:a98e39c13b09260ce2fb786dd855c709c inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the level with the given levelRegistryID  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a98e39c13b09260ce2fb786dd855c709c">More...</a><br /></td></tr>
 <tr class="separator:a98e39c13b09260ce2fb786dd855c709c inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49f223db3bd32c469bdf7b72e4d851df inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a49f223db3bd32c469bdf7b72e4d851df">RestartGame</a> ()</td></tr>
+<tr class="memdesc:a49f223db3bd32c469bdf7b72e4d851df inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restarts the game.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a49f223db3bd32c469bdf7b72e4d851df">More...</a><br /></td></tr>
 <tr class="separator:a49f223db3bd32c469bdf7b72e4d851df inherit pub_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -149,18 +165,23 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a27fd8420cfe1b4d514608fe94630c220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_game_scene1_1_1_tilemap_game_adapter')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html">GameScene1.TilemapGameAdapter</a></td></tr>
 <tr class="memitem:a23dac4eae61ea2ac478366ed87bd7323 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a34e68e76bb96563d546f8b3b777404a8">LevelFinishEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a23dac4eae61ea2ac478366ed87bd7323">onLevelFinish</a></td></tr>
+<tr class="memdesc:a23dac4eae61ea2ac478366ed87bd7323 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event is called when the level finishes.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a23dac4eae61ea2ac478366ed87bd7323">More...</a><br /></td></tr>
 <tr class="separator:a23dac4eae61ea2ac478366ed87bd7323 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba5c6569f90d42fd24729fceb46fde3 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#af5604423d6e23ce23a83e84a54527ef7">MovedBoxEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a8ba5c6569f90d42fd24729fceb46fde3">onBoxMoved</a></td></tr>
+<tr class="memdesc:a8ba5c6569f90d42fd24729fceb46fde3 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event is called each time a box is moved.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a8ba5c6569f90d42fd24729fceb46fde3">More...</a><br /></td></tr>
 <tr class="separator:a8ba5c6569f90d42fd24729fceb46fde3 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ec0ae3da9f670020fdc82fd64450625 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#acdd55cd63e82ff71b291a68042f6750c">MovedPlayerEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a4ec0ae3da9f670020fdc82fd64450625">onPlayerMoved</a></td></tr>
+<tr class="memdesc:a4ec0ae3da9f670020fdc82fd64450625 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event is called each time the player moves.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a4ec0ae3da9f670020fdc82fd64450625">More...</a><br /></td></tr>
 <tr class="separator:a4ec0ae3da9f670020fdc82fd64450625 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a891158f6d673154009ebbc5a28b07e23 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a7d56762dbbee42ca6cb546fb4b28ac61">TimePassedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a891158f6d673154009ebbc5a28b07e23">onTimePassed</a></td></tr>
+<tr class="memdesc:a891158f6d673154009ebbc5a28b07e23 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event is called every time a full second passes from the loading of the level.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a891158f6d673154009ebbc5a28b07e23">More...</a><br /></td></tr>
 <tr class="separator:a891158f6d673154009ebbc5a28b07e23 inherit pub_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_game_scene1_1_1_tilemap_game_adapter"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_game_scene1_1_1_tilemap_game_adapter')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html">GameScene1.TilemapGameAdapter</a></td></tr>
 <tr class="memitem:af8b4d3aeaaac34f2c77e052f994176a6 inherit pro_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#af8b4d3aeaaac34f2c77e052f994176a6">LevelFinished</a> ()</td></tr>
+<tr class="memdesc:af8b4d3aeaaac34f2c77e052f994176a6 inherit pro_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the level is finished. Shuts down the game and calls <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a23dac4eae61ea2ac478366ed87bd7323" title="This event is called when the level finishes.">onLevelFinish</a>.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#af8b4d3aeaaac34f2c77e052f994176a6">More...</a><br /></td></tr>
 <tr class="separator:af8b4d3aeaaac34f2c77e052f994176a6 inherit pro_methods_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_game_scene1_1_1_tilemap_game_adapter')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html">GameScene1.TilemapGameAdapter</a></td></tr>
 <tr class="memitem:abc49b15aa56cf40ae73d553147828410 inherit pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">TileBase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#abc49b15aa56cf40ae73d553147828410">boxOnBoxArea</a></td></tr>
@@ -180,6 +201,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab4d8df54e6c481d41a445b62fae6c2d2 inherit pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">TileBase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab4d8df54e6c481d41a445b62fae6c2d2">empty</a></td></tr>
 <tr class="separator:ab4d8df54e6c481d41a445b62fae6c2d2 inherit pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2ec77f34110d3d2ecee09d12fdba16 inherit pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">Tilemap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a></td></tr>
+<tr class="memdesc:a5c2ec77f34110d3d2ecee09d12fdba16 inherit pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Tilemap that the <a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html" title="Acts like an adapter between the Tilemap and Grid and the game. It has the ability to load and proper...">TilemapGameAdapter</a> is controlling.  <a href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">More...</a><br /></td></tr>
 <tr class="separator:a5c2ec77f34110d3d2ecee09d12fdba16 inherit pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f8a43d8820527b4d3416c2923c3f47 inherit pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene1_1_1_tilemap_game_adapter.html#a69f8a43d8820527b4d3416c2923c3f47">baseXCoordinate</a></td></tr>
 <tr class="separator:a69f8a43d8820527b4d3416c2923c3f47 inherit pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,17 +229,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a775c0d5c38b29461aaefe7f2c260d789 inherit pro_attribs_class_game_scene1_1_1_tilemap_game_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00005">5</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
+<div class="textblock"><p>Inherits from TilemapGameAdapter and modifies it so it can be used for level creation. </p>
+
+<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00008">8</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5b7298c9e291edd61406b4409ba392da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b7298c9e291edd61406b4409ba392da">&#9670;&nbsp;</a></span>ClearAllTiles()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GameScene3.EditorTilemapGameAdapter.ClearAllTiles </td>
@@ -226,17 +246,14 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00070">70</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.ClearAllTiles();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<p>Clears all tiles on the tilemap. </p>
+
+<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00101">101</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.ClearAllTiles();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -245,9 +262,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GameScene3.EditorTilemapGameAdapter.ExportLevel </td>
@@ -273,19 +287,24 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00059">59</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                                                   {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            var level = LevelRegistry2.SerializeTilemapToLevel(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>, levelName, levelHeight, levelWidth);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            LevelRegistry2.SaveLevel(level);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.ClearAllTiles();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<p>Exports the level and puts it into levelRegistry2. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">levelName</td><td>The new level's name</td></tr>
+    <tr><td class="paramname">levelHeight</td><td>The new level's height</td></tr>
+    <tr><td class="paramname">levelWidth</td><td>The new level's width</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00081">81</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                                                   {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            var level = LevelRegistry2.SerializeTilemapToLevel(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>, levelName, levelHeight, levelWidth);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            LevelRegistry2.SaveLevel(level);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.ClearAllTiles();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -294,9 +313,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Vector2 GameScene3.EditorTilemapGameAdapter.GetBaseCoordinates </td>
@@ -305,18 +321,16 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00050">50</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                            {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            var baseCoordinates = <span class="keyword">new</span> Vector2(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a69f8a43d8820527b4d3416c2923c3f47">baseXCoordinate</a>, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a4e03025cc2bd9ce6f3c0c85e457ab507">baseYCoordinate</a>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">return</span> baseCoordinates;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<p>Gets the baseXCoordinate and baseYCoordinate and returns them </p>
+<dl class="section return"><dt>Returns</dt><dd>A Vector2 containing the baseXCoordinate and baseYCoordinate</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00062">62</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                            {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            var baseCoordinates = <span class="keyword">new</span> Vector2(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a69f8a43d8820527b4d3416c2923c3f47">baseXCoordinate</a>, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a4e03025cc2bd9ce6f3c0c85e457ab507">baseYCoordinate</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> baseCoordinates;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,9 +339,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="struct_game_scene1_1_1_level.html">Level</a> GameScene3.EditorTilemapGameAdapter.GetLevel </td>
@@ -347,18 +358,23 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00065">65</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                               {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            var level = LevelRegistry2.SerializeTilemapToLevel(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>, <span class="stringliteral">&quot;PlayTestingLevel&quot;</span>, levelHeight, levelWidth);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> level;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<p>Gets the level that is currently being created in the editor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">levelHeight</td><td>The current level's height</td></tr>
+    <tr><td class="paramname">levelWidth</td><td>The current level's width</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Level that is being created</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00093">93</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                               {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            var level = LevelRegistry2.SerializeTilemapToLevel(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>, <span class="stringliteral">&quot;PlayTestingLevel&quot;</span>, levelHeight, levelWidth);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> level;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -367,9 +383,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float GameScene3.EditorTilemapGameAdapter.GetTileSideLength </td>
@@ -378,17 +391,15 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00055">55</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                         {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#aae1508733ba3b9c87ae1bcaa6238ec95">tileSideLength</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<p>Gets the current length of a tile's side. </p>
+<dl class="section return"><dt>Returns</dt><dd>The tile side length.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00071">71</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                         {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#aae1508733ba3b9c87ae1bcaa6238ec95">tileSideLength</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -431,9 +442,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void GameScene3.EditorTilemapGameAdapter.SetTile </td>
@@ -453,52 +461,56 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00011">11</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                                                  {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.GetTile(position) == <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#abd3b8a76d9c26c5b504844596357cf2b">player</a> &amp;&amp; tile != <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Player)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                <a class="code" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a27fd8420cfe1b4d514608fe94630c220">onPlayerRemoved</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="comment">// ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">switch</span> (tile) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Wall:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a72642c7fc4ffe3942180e32a42675e84">wall</a>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Floor:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a8554188aeda3d7b80444a219d3a333b8">floor</a>);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Player:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <a class="code" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a87a62d4af2bdfde829600464875ef441">onPlayerPlaced</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.GetTile(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab5c3a1c3c0efd2bd340e78866c60e944">currentPlayerLocation</a>) == <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#abd3b8a76d9c26c5b504844596357cf2b">player</a>)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab5c3a1c3c0efd2bd340e78866c60e944">currentPlayerLocation</a>, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a8554188aeda3d7b80444a219d3a333b8">floor</a>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab5c3a1c3c0efd2bd340e78866c60e944">currentPlayerLocation</a> = position;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#abd3b8a76d9c26c5b504844596357cf2b">player</a>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Box:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#aa3f1bb42468dbb1f4e643051c40deeac">box</a>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.BoxArea:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a0a86260402817a146a530747314d7590">boxArea</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Empty:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab4d8df54e6c481d41a445b62fae6c2d2">empty</a>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.BoxOnBoxArea:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#abc49b15aa56cf40ae73d553147828410">boxOnBoxArea</a>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <span class="keyword">null</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<p>Sets the tile at the given location to the given tile. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The position you want to place the tile in</td></tr>
+    <tr><td class="paramname">tile</td><td>The tile that you want to place</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00019">19</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                                  {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.GetTile(position) == <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#abd3b8a76d9c26c5b504844596357cf2b">player</a> &amp;&amp; tile != <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Player)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <a class="code" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a27fd8420cfe1b4d514608fe94630c220">onPlayerRemoved</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="comment">// ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">switch</span> (tile) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Wall:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a72642c7fc4ffe3942180e32a42675e84">wall</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Floor:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a8554188aeda3d7b80444a219d3a333b8">floor</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Player:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    <a class="code" href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a87a62d4af2bdfde829600464875ef441">onPlayerPlaced</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.GetTile(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab5c3a1c3c0efd2bd340e78866c60e944">currentPlayerLocation</a>) == <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#abd3b8a76d9c26c5b504844596357cf2b">player</a>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(<a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab5c3a1c3c0efd2bd340e78866c60e944">currentPlayerLocation</a>, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a8554188aeda3d7b80444a219d3a333b8">floor</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab5c3a1c3c0efd2bd340e78866c60e944">currentPlayerLocation</a> = position;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#abd3b8a76d9c26c5b504844596357cf2b">player</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Box:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#aa3f1bb42468dbb1f4e643051c40deeac">box</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.BoxArea:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a0a86260402817a146a530747314d7590">boxArea</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.Empty:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#ab4d8df54e6c481d41a445b62fae6c2d2">empty</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="struct_game_scene1_1_1_level.html">Level</a>.<a class="code" href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">Tile</a>.BoxOnBoxArea:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#abc49b15aa56cf40ae73d553147828410">boxOnBoxArea</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <a class="code" href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">tilemap</a>.SetTile(position, <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -515,7 +527,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00007">7</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00010">10</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
 
 </div>
 </div>
@@ -531,7 +543,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00009">9</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html#l00012">12</a> of file <a class="el" href="_editor_tilemap_game_adapter_8cs_source.html">EditorTilemapGameAdapter.cs</a>.</p>
 
 </div>
 </div>
@@ -540,22 +552,22 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a4e03025cc2bd9ce6f3c0c85e457ab507"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a4e03025cc2bd9ce6f3c0c85e457ab507">GameScene1.TilemapGameAdapter.baseYCoordinate</a></div><div class="ttdeci">float baseYCoordinate</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00028">TilemapGameAdapter.cs:28</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_ab5c3a1c3c0efd2bd340e78866c60e944"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#ab5c3a1c3c0efd2bd340e78866c60e944">GameScene1.TilemapGameAdapter.currentPlayerLocation</a></div><div class="ttdeci">Vector3Int currentPlayerLocation</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00032">TilemapGameAdapter.cs:32</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a69f8a43d8820527b4d3416c2923c3f47"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a69f8a43d8820527b4d3416c2923c3f47">GameScene1.TilemapGameAdapter.baseXCoordinate</a></div><div class="ttdeci">float baseXCoordinate</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00027">TilemapGameAdapter.cs:27</a></div></div>
-<div class="ttc" id="astruct_game_scene1_1_1_level_html"><div class="ttname"><a href="struct_game_scene1_1_1_level.html">GameScene1.Level</a></div><div class="ttdef"><b>Definition:</b> <a href="_level_8cs_source.html#l00007">Level.cs:7</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a5c2ec77f34110d3d2ecee09d12fdba16"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">GameScene1.TilemapGameAdapter.tilemap</a></div><div class="ttdeci">Tilemap tilemap</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00019">TilemapGameAdapter.cs:19</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_ab4d8df54e6c481d41a445b62fae6c2d2"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#ab4d8df54e6c481d41a445b62fae6c2d2">GameScene1.TilemapGameAdapter.empty</a></div><div class="ttdeci">TileBase empty</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00017">TilemapGameAdapter.cs:17</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_abd3b8a76d9c26c5b504844596357cf2b"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#abd3b8a76d9c26c5b504844596357cf2b">GameScene1.TilemapGameAdapter.player</a></div><div class="ttdeci">TileBase player</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00013">TilemapGameAdapter.cs:13</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a8554188aeda3d7b80444a219d3a333b8"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a8554188aeda3d7b80444a219d3a333b8">GameScene1.TilemapGameAdapter.floor</a></div><div class="ttdeci">TileBase floor</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00014">TilemapGameAdapter.cs:14</a></div></div>
-<div class="ttc" id="aclass_game_scene3_1_1_editor_tilemap_game_adapter_html_a27fd8420cfe1b4d514608fe94630c220"><div class="ttname"><a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a27fd8420cfe1b4d514608fe94630c220">GameScene3.EditorTilemapGameAdapter.onPlayerRemoved</a></div><div class="ttdeci">PlayerRemovedEvent onPlayerRemoved</div><div class="ttdef"><b>Definition:</b> <a href="_editor_tilemap_game_adapter_8cs_source.html#l00009">EditorTilemapGameAdapter.cs:9</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a72642c7fc4ffe3942180e32a42675e84"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a72642c7fc4ffe3942180e32a42675e84">GameScene1.TilemapGameAdapter.wall</a></div><div class="ttdeci">TileBase wall</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00015">TilemapGameAdapter.cs:15</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_abc49b15aa56cf40ae73d553147828410"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#abc49b15aa56cf40ae73d553147828410">GameScene1.TilemapGameAdapter.boxOnBoxArea</a></div><div class="ttdeci">TileBase boxOnBoxArea</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00010">TilemapGameAdapter.cs:10</a></div></div>
-<div class="ttc" id="astruct_game_scene1_1_1_level_html_afef3fab4ae7680bcc6b10b3935510dd4"><div class="ttname"><a href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">GameScene1.Level.Tile</a></div><div class="ttdeci">Tile</div><div class="ttdef"><b>Definition:</b> <a href="_level_8cs_source.html#l00047">Level.cs:47</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_aa3f1bb42468dbb1f4e643051c40deeac"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#aa3f1bb42468dbb1f4e643051c40deeac">GameScene1.TilemapGameAdapter.box</a></div><div class="ttdeci">TileBase box</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00016">TilemapGameAdapter.cs:16</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_aae1508733ba3b9c87ae1bcaa6238ec95"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#aae1508733ba3b9c87ae1bcaa6238ec95">GameScene1.TilemapGameAdapter.tileSideLength</a></div><div class="ttdeci">float tileSideLength</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00029">TilemapGameAdapter.cs:29</a></div></div>
-<div class="ttc" id="aclass_game_scene3_1_1_editor_tilemap_game_adapter_html_a87a62d4af2bdfde829600464875ef441"><div class="ttname"><a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a87a62d4af2bdfde829600464875ef441">GameScene3.EditorTilemapGameAdapter.onPlayerPlaced</a></div><div class="ttdeci">PlayerPlacedEvent onPlayerPlaced</div><div class="ttdef"><b>Definition:</b> <a href="_editor_tilemap_game_adapter_8cs_source.html#l00007">EditorTilemapGameAdapter.cs:7</a></div></div>
-<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a0a86260402817a146a530747314d7590"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a0a86260402817a146a530747314d7590">GameScene1.TilemapGameAdapter.boxArea</a></div><div class="ttdeci">TileBase boxArea</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00011">TilemapGameAdapter.cs:11</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a4e03025cc2bd9ce6f3c0c85e457ab507"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a4e03025cc2bd9ce6f3c0c85e457ab507">GameScene1.TilemapGameAdapter.baseYCoordinate</a></div><div class="ttdeci">float baseYCoordinate</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00049">TilemapGameAdapter.cs:49</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_ab5c3a1c3c0efd2bd340e78866c60e944"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#ab5c3a1c3c0efd2bd340e78866c60e944">GameScene1.TilemapGameAdapter.currentPlayerLocation</a></div><div class="ttdeci">Vector3Int currentPlayerLocation</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00053">TilemapGameAdapter.cs:53</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a69f8a43d8820527b4d3416c2923c3f47"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a69f8a43d8820527b4d3416c2923c3f47">GameScene1.TilemapGameAdapter.baseXCoordinate</a></div><div class="ttdeci">float baseXCoordinate</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00048">TilemapGameAdapter.cs:48</a></div></div>
+<div class="ttc" id="astruct_game_scene1_1_1_level_html"><div class="ttname"><a href="struct_game_scene1_1_1_level.html">GameScene1.Level</a></div><div class="ttdoc">A struct that stores data about a level. Used in stage 1 and stage 2.</div><div class="ttdef"><b>Definition:</b> <a href="_level_8cs_source.html#l00010">Level.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a5c2ec77f34110d3d2ecee09d12fdba16"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a5c2ec77f34110d3d2ecee09d12fdba16">GameScene1.TilemapGameAdapter.tilemap</a></div><div class="ttdeci">Tilemap tilemap</div><div class="ttdoc">The Tilemap that the TilemapGameAdapter is controlling.</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00028">TilemapGameAdapter.cs:28</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_ab4d8df54e6c481d41a445b62fae6c2d2"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#ab4d8df54e6c481d41a445b62fae6c2d2">GameScene1.TilemapGameAdapter.empty</a></div><div class="ttdeci">TileBase empty</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00023">TilemapGameAdapter.cs:23</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_abd3b8a76d9c26c5b504844596357cf2b"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#abd3b8a76d9c26c5b504844596357cf2b">GameScene1.TilemapGameAdapter.player</a></div><div class="ttdeci">TileBase player</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00019">TilemapGameAdapter.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a8554188aeda3d7b80444a219d3a333b8"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a8554188aeda3d7b80444a219d3a333b8">GameScene1.TilemapGameAdapter.floor</a></div><div class="ttdeci">TileBase floor</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00020">TilemapGameAdapter.cs:20</a></div></div>
+<div class="ttc" id="aclass_game_scene3_1_1_editor_tilemap_game_adapter_html_a27fd8420cfe1b4d514608fe94630c220"><div class="ttname"><a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a27fd8420cfe1b4d514608fe94630c220">GameScene3.EditorTilemapGameAdapter.onPlayerRemoved</a></div><div class="ttdeci">PlayerRemovedEvent onPlayerRemoved</div><div class="ttdef"><b>Definition:</b> <a href="_editor_tilemap_game_adapter_8cs_source.html#l00012">EditorTilemapGameAdapter.cs:12</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a72642c7fc4ffe3942180e32a42675e84"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a72642c7fc4ffe3942180e32a42675e84">GameScene1.TilemapGameAdapter.wall</a></div><div class="ttdeci">TileBase wall</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00021">TilemapGameAdapter.cs:21</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_abc49b15aa56cf40ae73d553147828410"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#abc49b15aa56cf40ae73d553147828410">GameScene1.TilemapGameAdapter.boxOnBoxArea</a></div><div class="ttdeci">TileBase boxOnBoxArea</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00016">TilemapGameAdapter.cs:16</a></div></div>
+<div class="ttc" id="astruct_game_scene1_1_1_level_html_afef3fab4ae7680bcc6b10b3935510dd4"><div class="ttname"><a href="struct_game_scene1_1_1_level.html#afef3fab4ae7680bcc6b10b3935510dd4">GameScene1.Level.Tile</a></div><div class="ttdeci">Tile</div><div class="ttdoc">An enum used to store all the different types of tiles that are used in levels.</div><div class="ttdef"><b>Definition:</b> <a href="_level_8cs_source.html#l00071">Level.cs:71</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_aa3f1bb42468dbb1f4e643051c40deeac"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#aa3f1bb42468dbb1f4e643051c40deeac">GameScene1.TilemapGameAdapter.box</a></div><div class="ttdeci">TileBase box</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00022">TilemapGameAdapter.cs:22</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_aae1508733ba3b9c87ae1bcaa6238ec95"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#aae1508733ba3b9c87ae1bcaa6238ec95">GameScene1.TilemapGameAdapter.tileSideLength</a></div><div class="ttdeci">float tileSideLength</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00050">TilemapGameAdapter.cs:50</a></div></div>
+<div class="ttc" id="aclass_game_scene3_1_1_editor_tilemap_game_adapter_html_a87a62d4af2bdfde829600464875ef441"><div class="ttname"><a href="class_game_scene3_1_1_editor_tilemap_game_adapter.html#a87a62d4af2bdfde829600464875ef441">GameScene3.EditorTilemapGameAdapter.onPlayerPlaced</a></div><div class="ttdeci">PlayerPlacedEvent onPlayerPlaced</div><div class="ttdef"><b>Definition:</b> <a href="_editor_tilemap_game_adapter_8cs_source.html#l00010">EditorTilemapGameAdapter.cs:10</a></div></div>
+<div class="ttc" id="aclass_game_scene1_1_1_tilemap_game_adapter_html_a0a86260402817a146a530747314d7590"><div class="ttname"><a href="class_game_scene1_1_1_tilemap_game_adapter.html#a0a86260402817a146a530747314d7590">GameScene1.TilemapGameAdapter.boxArea</a></div><div class="ttdeci">TileBase boxArea</div><div class="ttdef"><b>Definition:</b> <a href="_tilemap_game_adapter_8cs_source.html#l00017">TilemapGameAdapter.cs:17</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
